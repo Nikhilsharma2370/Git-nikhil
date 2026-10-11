@@ -128,7 +128,7 @@ export const Full1VideoCentric: React.FC = () => (
         <>
           {/* depth */}
           <div style={{ position: "absolute", right: -160, bottom: -120, width: 520, height: 520, borderRadius: 260, background: C.blue, opacity: 0.16, filter: "blur(30px)" }} />
-          <Gfx name="camcorder" x={960} y={300} w={380} rot={8} style={{ filter: "blur(1.5px) drop-shadow(0 22px 26px rgba(40,34,26,0.22))" }} />
+          <Gfx name="camcorder" x={985} y={110} w={300} rot={8} style={{ filter: "blur(1.5px) drop-shadow(0 22px 26px rgba(40,34,26,0.22))" }} />
           <Gfx name="brush_stroke" x={180} y={1760} w={520} rot={-8} style={{ clipPath: `inset(0 ${(1 - brush) * 100}% 0 0)` }} />
 
           {/* text (supporting, upar) */}

@@ -508,7 +508,7 @@
   paperBG(f1, H);
   var blob = ellipse(f1, "depth blue blob", 520, [W + 100, H + 140], COL.blue, 100);
   opa(blob).setValue(16); addBlur(blob, 60);
-  var cam = image(f1, G.camcorder, "depth camcorder", [960, 300], 380, 8);
+  var cam = image(f1, G.camcorder, "depth camcorder", [985, 110], 300, 8);
   if (cam) { addDropShadow(cam, 25, 18, 40); addBlur(cam, 2); }
   var brush = image(f1, G.brush_stroke, "depth brush stroke", [180, 1760], 520, -8);
   if (brush) tryDo("linear wipe", function () {
