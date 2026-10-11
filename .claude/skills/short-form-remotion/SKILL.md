@@ -127,4 +127,11 @@ Pipeline that worked here:
 4. Render 15–20 stills (`npx remotion still … --scale=0.5`) and review them before the full render.
 5. Deliverable must be ≤30 MB to send in chat → re-encode with ffmpeg (`-b:v 4M`).
 
+## 11. Adobe route (After Effects / Premiere) + Gemini graphics
+When Nikhil wants Photoshop / Gemini graphics or an AE / Premiere edit: this container can't run Adobe apps, so ship an **Adobe kit** (working example: `projects/reel-01-three-mistakes/adobe/`):
+- **Graphics:** Gemini Nano Banana via the Magnific connector (`imagen-nano-banana-2-lite` is cheap; tell him the credit cost first). Prompt: one isolated object, plain light grey background, no text. Then cut out locally with `rembg` (`isnet-general-use`, alpha matting) and trim — no extra credits. Split multi-object images with alpha column gaps.
+- **After Effects:** one ES3 `.jsx` + `//@include` data file generated from the Remotion timeline (`scripts/export-data.ts`). Builds real layers: SPEAKER cuts, half/zoom keys, dim + blur adjustment, captions with a word-indexed Text Animator, shape-layer UI, scene precomps, SFX layers per family, markers. Wrap every effect parameter in try/catch; find effect colour params by type, not index. Verify with `acorn` (ecmaVersion 3) and a mock-AE dry run before shipping.
+- **Premiere:** FCP7 XML (`scripts/export_premiere.py`): V1 cuts split at motion boundaries with static Basic Motion, V2 = AE `GRAPHICS` alpha render, A1 voice, A2–A5 SFX families with Audio Levels, scene markers + SRT. Relative pathurls → user does Link Media once.
+- Always render a Remotion preview with the same graphics so he can see the look, and say plainly that the Adobe files are untested in real AE / Premiere.
+
 If a part of the brief is still missing from `learnings/`, say so and ask rather than guessing.

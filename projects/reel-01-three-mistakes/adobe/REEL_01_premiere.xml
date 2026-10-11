@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xmeml>
+<xmeml version="5">
+  <sequence id="seq-reel-01">
+    <name>REEL_01 (3 mistakes)</name>
+    <duration>1555</duration>
+    <rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate>
+    <timecode><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><string>00:00:00:00</string><frame>0</frame><displayformat>NDF</displayformat></timecode>
+    <marker><name>HOOK (on-screen)</name><comment></comment><in>0</in><out>-1</out></marker><marker><name>On-screen: slider</name><comment></comment><in>102</in><out>-1</out></marker><marker><name>On-screen: Number 1</name><comment></comment><in>208</in><out>-1</out></marker><marker><name>FULL: video-centric</name><comment></comment><in>263</in><out>-1</out></marker><marker><name>Zoom punch-in</name><comment></comment><in>416</in><out>-1</out></marker><marker><name>HALF: 25% smaller</name><comment></comment><in>508</in><out>-1</out></marker><marker><name>On-screen: Number 2</name><comment></comment><in>637</in><out>-1</out></marker><marker><name>HALF: less is more</name><comment></comment><in>692</in><out>-1</out></marker><marker><name>FULL: spotlight</name><comment></comment><in>837</in><out>-1</out></marker><marker><name>On-screen: Number 3</name><comment></comment><in>962</in><out>-1</out></marker><marker><name>HALF: harsh palette</name><comment></comment><in>1024</in><out>-1</out></marker><marker><name>FULL: high-end</name><comment></comment><in>1166</in><out>-1</out></marker><marker><name>Recap</name><comment></comment><in>1370</in><out>-1</out></marker>
+    <media>
+      <video>
+        <format><samplecharacteristics><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><width>1080</width><height>1920</height><pixelaspectratio>square</pixelaspectratio><fielddominance>none</fielddominance></samplecharacteristics></format>
+        <track>
+          <clipitem id="v1-0"><name>speaker 1</name><duration>2289</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>0</start><end>101</end><in>54</in><out>155</out>
+            <file id="file-raw"><name>3 things from beginner to pro.mp4</name><pathurl>footage/3%20things%20from%20beginner%20to%20pro.mp4</pathurl><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><duration>2289</duration>
+              <media><video><samplecharacteristics><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><width>1080</width><height>1920</height><pixelaspectratio>square</pixelaspectratio></samplecharacteristics></video>
+              <audio><samplecharacteristics><depth>16</depth><samplerate>48000</samplerate></samplecharacteristics><channelcount>2</channelcount></audio></media></file>
+            <link><linkclipref>v1-0</linkclipref><mediatype>video</mediatype><trackindex>1</trackindex><clipindex>1</clipindex></link>
+            <link><linkclipref>a1-0</linkclipref><mediatype>audio</mediatype><trackindex>1</trackindex><clipindex>1</clipindex></link>
+          </clipitem>
+          <clipitem id="v1-1"><name>speaker 2</name><duration>2289</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>101</start><end>203</end><in>159</in><out>261</out>
+            <file id="file-raw"/>
+            <link><linkclipref>v1-1</linkclipref><mediatype>video</mediatype><trackindex>1</trackindex><clipindex>2</clipindex></link>
+            <link><linkclipref>a1-1</linkclipref><mediatype>audio</mediatype><trackindex>1</trackindex><clipindex>2</clipindex></link>
+          </clipitem>
+          <clipitem id="v1-2"><name>speaker 3</name><duration>2289</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>203</start><end>266</end><in>397</in><out>460</out>
+            <file id="file-raw"/>
+            <link><linkclipref>v1-2</linkclipref><mediatype>video</mediatype><trackindex>1</trackindex><clipindex>3</clipindex></link>
+            <link><linkclipref>a1-2</linkclipref><mediatype>audio</mediatype><trackindex>1</trackindex><clipindex>3</clipindex></link>
+          </clipitem>
+          <clipitem id="v1-3"><name>speaker 4</name><duration>2289</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>266</start><end>418</end><in>523</in><out>675</out>
+            <file id="file-raw"/>
+            <link><linkclipref>v1-3</linkclipref><mediatype>video</mediatype><trackindex>1</trackindex><clipindex>4</clipindex></link>
+            <link><linkclipref>a1-3</linkclipref><mediatype>audio</mediatype><trackindex>1</trackindex><clipindex>4</clipindex></link>
+          </clipitem>
+          <clipitem id="v1-4"><name>speaker 5</name><duration>2289</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>418</start><end>424</end><in>680</in><out>686</out>
+            <file id="file-raw"/>
+            <link><linkclipref>v1-4</linkclipref><mediatype>video</mediatype><trackindex>1</trackindex><clipindex>5</clipindex></link>
+            <link><linkclipref>a1-4</linkclipref><mediatype>audio</mediatype><trackindex>1</trackindex><clipindex>5</clipindex></link>
+          </clipitem>
+          <clipitem id="v1-5"><name>speaker 6 [ZOOM]</name><duration>2289</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>424</start><end>508</end><in>686</in><out>770</out>
+            <file id="file-raw"/>
+            <filter><effect><name>Basic Motion</name><effectid>basic</effectid><effectcategory>motion</effectcategory><effecttype>motion</effecttype><mediatype>video</mediatype>
+              <parameter><parameterid>scale</parameterid><name>Scale</name><valuemin>0</valuemin><valuemax>1000</valuemax><value>118.00</value></parameter>
+              <parameter><parameterid>center</parameterid><name>Center</name><value><horiz>0.00750</horiz><vert>0.04125</vert></value></parameter>
+            </effect></filter>
+            <link><linkclipref>v1-5</linkclipref><mediatype>video</mediatype><trackindex>1</trackindex><clipindex>6</clipindex></link>
+            <link><linkclipref>a1-5</linkclipref><mediatype>audio</mediatype><trackindex>1</trackindex><clipindex>6</clipindex></link>
+          </clipitem>
+          <clipitem id="v1-6"><name>speaker 7</name><duration>2289</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>508</start><end>513</end><in>771</in><out>776</out>
+            <file id="file-raw"/>
+            <link><linkclipref>v1-6</linkclipref><mediatype>video</mediatype><trackindex>1</trackindex><clipindex>7</clipindex></link>
+            <link><linkclipref>a1-6</linkclipref><mediatype>audio</mediatype><trackindex>1</trackindex><clipindex>7</clipindex></link>
+          </clipitem>
+          <clipitem id="v1-7"><name>speaker 8 [HALF]</name><duration>2289</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>513</start><end>634</end><in>775</in><out>896</out>
+            <file id="file-raw"/>
+            <filter><effect><name>Basic Motion</name><effectid>basic</effectid><effectcategory>motion</effectcategory><effecttype>motion</effecttype><mediatype>video</mediatype>
+              <parameter><parameterid>scale</parameterid><name>Scale</name><valuemin>0</valuemin><valuemax>1000</valuemax><value>100.00</value></parameter>
+              <parameter><parameterid>center</parameterid><name>Center</name><value><horiz>0.00000</horiz><vert>0.43750</vert></value></parameter>
+            </effect></filter>
+            <link><linkclipref>v1-7</linkclipref><mediatype>video</mediatype><trackindex>1</trackindex><clipindex>8</clipindex></link>
+            <link><linkclipref>a1-7</linkclipref><mediatype>audio</mediatype><trackindex>1</trackindex><clipindex>8</clipindex></link>
+          </clipitem>
+          <clipitem id="v1-8"><name>speaker 9</name><duration>2289</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>634</start><end>635</end><in>896</in><out>897</out>
+            <file id="file-raw"/>
+            <link><linkclipref>v1-8</linkclipref><mediatype>video</mediatype><trackindex>1</trackindex><clipindex>9</clipindex></link>
+            <link><linkclipref>a1-8</linkclipref><mediatype>audio</mediatype><trackindex>1</trackindex><clipindex>9</clipindex></link>
+          </clipitem>
+          <clipitem id="v1-9"><name>speaker 10</name><duration>2289</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>635</start><end>696</end><in>910</in><out>971</out>
+            <file id="file-raw"/>
+            <link><linkclipref>v1-9</linkclipref><mediatype>video</mediatype><trackindex>1</trackindex><clipindex>10</clipindex></link>
+            <link><linkclipref>a1-9</linkclipref><mediatype>audio</mediatype><trackindex>1</trackindex><clipindex>10</clipindex></link>
+          </clipitem>
+          <clipitem id="v1-10"><name>speaker 11 [HALF]</name><duration>2289</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>696</start><end>702</end><in>972</in><out>978</out>
+            <file id="file-raw"/>
+            <filter><effect><name>Basic Motion</name><effectid>basic</effectid><effectcategory>motion</effectcategory><effecttype>motion</effecttype><mediatype>video</mediatype>
+              <parameter><parameterid>scale</parameterid><name>Scale</name><valuemin>0</valuemin><valuemax>1000</valuemax><value>100.00</value></parameter>
+              <parameter><parameterid>center</parameterid><name>Center</name><value><horiz>0.00000</horiz><vert>0.43750</vert></value></parameter>
+            </effect></filter>
+            <link><linkclipref>v1-10</linkclipref><mediatype>video</mediatype><trackindex>1</trackindex><clipindex>11</clipindex></link>
+            <link><linkclipref>a1-10</linkclipref><mediatype>audio</mediatype><trackindex>1</trackindex><clipindex>11</clipindex></link>
+          </clipitem>
+          <clipitem id="v1-11"><name>speaker 12 [HALF]</name><duration>2289</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>702</start><end>834</end><in>1042</in><out>1174</out>
+            <file id="file-raw"/>
+            <filter><effect><name>Basic Motion</name><effectid>basic</effectid><effectcategory>motion</effectcategory><effecttype>motion</effecttype><mediatype>video</mediatype>
+              <parameter><parameterid>scale</parameterid><name>Scale</name><valuemin>0</valuemin><valuemax>1000</valuemax><value>100.00</value></parameter>
+              <parameter><parameterid>center</parameterid><name>Center</name><value><horiz>0.00000</horiz><vert>0.43750</vert></value></parameter>
+            </effect></filter>
+            <link><linkclipref>v1-11</linkclipref><mediatype>video</mediatype><trackindex>1</trackindex><clipindex>12</clipindex></link>
+            <link><linkclipref>a1-11</linkclipref><mediatype>audio</mediatype><trackindex>1</trackindex><clipindex>12</clipindex></link>
+          </clipitem>
+          <clipitem id="v1-12"><name>speaker 13</name><duration>2289</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>834</start><end>841</end><in>1174</in><out>1181</out>
+            <file id="file-raw"/>
+            <link><linkclipref>v1-12</linkclipref><mediatype>video</mediatype><trackindex>1</trackindex><clipindex>13</clipindex></link>
+            <link><linkclipref>a1-12</linkclipref><mediatype>audio</mediatype><trackindex>1</trackindex><clipindex>13</clipindex></link>
+          </clipitem>
+          <clipitem id="v1-13"><name>speaker 14</name><duration>2289</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>841</start><end>958</end><in>1236</in><out>1353</out>
+            <file id="file-raw"/>
+            <link><linkclipref>v1-13</linkclipref><mediatype>video</mediatype><trackindex>1</trackindex><clipindex>14</clipindex></link>
+            <link><linkclipref>a1-13</linkclipref><mediatype>audio</mediatype><trackindex>1</trackindex><clipindex>14</clipindex></link>
+          </clipitem>
+          <clipitem id="v1-14"><name>speaker 15</name><duration>2289</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>958</start><end>1028</end><in>1402</in><out>1472</out>
+            <file id="file-raw"/>
+            <link><linkclipref>v1-14</linkclipref><mediatype>video</mediatype><trackindex>1</trackindex><clipindex>15</clipindex></link>
+            <link><linkclipref>a1-14</linkclipref><mediatype>audio</mediatype><trackindex>1</trackindex><clipindex>15</clipindex></link>
+          </clipitem>
+          <clipitem id="v1-15"><name>speaker 16 [HALF]</name><duration>2289</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>1028</start><end>1033</end><in>1472</in><out>1477</out>
+            <file id="file-raw"/>
+            <filter><effect><name>Basic Motion</name><effectid>basic</effectid><effectcategory>motion</effectcategory><effecttype>motion</effecttype><mediatype>video</mediatype>
+              <parameter><parameterid>scale</parameterid><name>Scale</name><valuemin>0</valuemin><valuemax>1000</valuemax><value>100.00</value></parameter>
+              <parameter><parameterid>center</parameterid><name>Center</name><value><horiz>0.00000</horiz><vert>0.43750</vert></value></parameter>
+            </effect></filter>
+            <link><linkclipref>v1-15</linkclipref><mediatype>video</mediatype><trackindex>1</trackindex><clipindex>16</clipindex></link>
+            <link><linkclipref>a1-15</linkclipref><mediatype>audio</mediatype><trackindex>1</trackindex><clipindex>16</clipindex></link>
+          </clipitem>
+          <clipitem id="v1-16"><name>speaker 17 [HALF]</name><duration>2289</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>1033</start><end>1161</end><in>1487</in><out>1615</out>
+            <file id="file-raw"/>
+            <filter><effect><name>Basic Motion</name><effectid>basic</effectid><effectcategory>motion</effectcategory><effecttype>motion</effecttype><mediatype>video</mediatype>
+              <parameter><parameterid>scale</parameterid><name>Scale</name><valuemin>0</valuemin><valuemax>1000</valuemax><value>100.00</value></parameter>
+              <parameter><parameterid>center</parameterid><name>Center</name><value><horiz>0.00000</horiz><vert>0.43750</vert></value></parameter>
+            </effect></filter>
+            <link><linkclipref>v1-16</linkclipref><mediatype>video</mediatype><trackindex>1</trackindex><clipindex>17</clipindex></link>
+            <link><linkclipref>a1-16</linkclipref><mediatype>audio</mediatype><trackindex>1</trackindex><clipindex>17</clipindex></link>
+          </clipitem>
+          <clipitem id="v1-17"><name>speaker 18 [HALF]</name><duration>2289</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>1161</start><end>1163</end><in>1630</in><out>1632</out>
+            <file id="file-raw"/>
+            <filter><effect><name>Basic Motion</name><effectid>basic</effectid><effectcategory>motion</effectcategory><effecttype>motion</effecttype><mediatype>video</mediatype>
+              <parameter><parameterid>scale</parameterid><name>Scale</name><valuemin>0</valuemin><valuemax>1000</valuemax><value>100.00</value></parameter>
+              <parameter><parameterid>center</parameterid><name>Center</name><value><horiz>0.00000</horiz><vert>0.43750</vert></value></parameter>
+            </effect></filter>
+            <link><linkclipref>v1-17</linkclipref><mediatype>video</mediatype><trackindex>1</trackindex><clipindex>18</clipindex></link>
+            <link><linkclipref>a1-17</linkclipref><mediatype>audio</mediatype><trackindex>1</trackindex><clipindex>18</clipindex></link>
+          </clipitem>
+          <clipitem id="v1-18"><name>speaker 19</name><duration>2289</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>1163</start><end>1281</end><in>1632</in><out>1750</out>
+            <file id="file-raw"/>
+            <link><linkclipref>v1-18</linkclipref><mediatype>video</mediatype><trackindex>1</trackindex><clipindex>19</clipindex></link>
+            <link><linkclipref>a1-18</linkclipref><mediatype>audio</mediatype><trackindex>1</trackindex><clipindex>19</clipindex></link>
+          </clipitem>
+          <clipitem id="v1-19"><name>speaker 20</name><duration>2289</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>1281</start><end>1366</end><in>1782</in><out>1867</out>
+            <file id="file-raw"/>
+            <link><linkclipref>v1-19</linkclipref><mediatype>video</mediatype><trackindex>1</trackindex><clipindex>20</clipindex></link>
+            <link><linkclipref>a1-19</linkclipref><mediatype>audio</mediatype><trackindex>1</trackindex><clipindex>20</clipindex></link>
+          </clipitem>
+          <clipitem id="v1-20"><name>speaker 21</name><duration>2289</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>1366</start><end>1552</end><in>2037</in><out>2223</out>
+            <file id="file-raw"/>
+            <link><linkclipref>v1-20</linkclipref><mediatype>video</mediatype><trackindex>1</trackindex><clipindex>21</clipindex></link>
+            <link><linkclipref>a1-20</linkclipref><mediatype>audio</mediatype><trackindex>1</trackindex><clipindex>21</clipindex></link>
+          </clipitem></track>
+        <track>
+          <clipitem id="v2-gfx"><name>REEL_01_GRAPHICS (AE alpha render)</name><duration>1555</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>0</start><end>1555</end><in>0</in><out>1555</out>
+            <file id="file-gfx"><name>REEL_01_GRAPHICS.mov</name><pathurl>renders/REEL_01_GRAPHICS.mov</pathurl><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><duration>1555</duration>
+              <media><video><samplecharacteristics><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><width>1080</width><height>1920</height><pixelaspectratio>square</pixelaspectratio></samplecharacteristics></video></media></file>
+          </clipitem></track>
+      </video>
+      <audio>
+        <numOutputChannels>2</numOutputChannels>
+        <track>
+          <clipitem id="a1-0"><name>speaker 1</name><duration>2289</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>0</start><end>101</end><in>54</in><out>155</out>
+            <file id="file-raw"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <link><linkclipref>v1-0</linkclipref><mediatype>video</mediatype><trackindex>1</trackindex><clipindex>1</clipindex></link>
+            <link><linkclipref>a1-0</linkclipref><mediatype>audio</mediatype><trackindex>1</trackindex><clipindex>1</clipindex></link>
+          </clipitem>
+          <clipitem id="a1-1"><name>speaker 2</name><duration>2289</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>101</start><end>203</end><in>159</in><out>261</out>
+            <file id="file-raw"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <link><linkclipref>v1-1</linkclipref><mediatype>video</mediatype><trackindex>1</trackindex><clipindex>2</clipindex></link>
+            <link><linkclipref>a1-1</linkclipref><mediatype>audio</mediatype><trackindex>1</trackindex><clipindex>2</clipindex></link>
+          </clipitem>
+          <clipitem id="a1-2"><name>speaker 3</name><duration>2289</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>203</start><end>266</end><in>397</in><out>460</out>
+            <file id="file-raw"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <link><linkclipref>v1-2</linkclipref><mediatype>video</mediatype><trackindex>1</trackindex><clipindex>3</clipindex></link>
+            <link><linkclipref>a1-2</linkclipref><mediatype>audio</mediatype><trackindex>1</trackindex><clipindex>3</clipindex></link>
+          </clipitem>
+          <clipitem id="a1-3"><name>speaker 4</name><duration>2289</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>266</start><end>418</end><in>523</in><out>675</out>
+            <file id="file-raw"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <link><linkclipref>v1-3</linkclipref><mediatype>video</mediatype><trackindex>1</trackindex><clipindex>4</clipindex></link>
+            <link><linkclipref>a1-3</linkclipref><mediatype>audio</mediatype><trackindex>1</trackindex><clipindex>4</clipindex></link>
+          </clipitem>
+          <clipitem id="a1-4"><name>speaker 5</name><duration>2289</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>418</start><end>424</end><in>680</in><out>686</out>
+            <file id="file-raw"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <link><linkclipref>v1-4</linkclipref><mediatype>video</mediatype><trackindex>1</trackindex><clipindex>5</clipindex></link>
+            <link><linkclipref>a1-4</linkclipref><mediatype>audio</mediatype><trackindex>1</trackindex><clipindex>5</clipindex></link>
+          </clipitem>
+          <clipitem id="a1-5"><name>speaker 6 [ZOOM]</name><duration>2289</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>424</start><end>508</end><in>686</in><out>770</out>
+            <file id="file-raw"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <link><linkclipref>v1-5</linkclipref><mediatype>video</mediatype><trackindex>1</trackindex><clipindex>6</clipindex></link>
+            <link><linkclipref>a1-5</linkclipref><mediatype>audio</mediatype><trackindex>1</trackindex><clipindex>6</clipindex></link>
+          </clipitem>
+          <clipitem id="a1-6"><name>speaker 7</name><duration>2289</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>508</start><end>513</end><in>771</in><out>776</out>
+            <file id="file-raw"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <link><linkclipref>v1-6</linkclipref><mediatype>video</mediatype><trackindex>1</trackindex><clipindex>7</clipindex></link>
+            <link><linkclipref>a1-6</linkclipref><mediatype>audio</mediatype><trackindex>1</trackindex><clipindex>7</clipindex></link>
+          </clipitem>
+          <clipitem id="a1-7"><name>speaker 8 [HALF]</name><duration>2289</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>513</start><end>634</end><in>775</in><out>896</out>
+            <file id="file-raw"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <link><linkclipref>v1-7</linkclipref><mediatype>video</mediatype><trackindex>1</trackindex><clipindex>8</clipindex></link>
+            <link><linkclipref>a1-7</linkclipref><mediatype>audio</mediatype><trackindex>1</trackindex><clipindex>8</clipindex></link>
+          </clipitem>
+          <clipitem id="a1-8"><name>speaker 9</name><duration>2289</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>634</start><end>635</end><in>896</in><out>897</out>
+            <file id="file-raw"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <link><linkclipref>v1-8</linkclipref><mediatype>video</mediatype><trackindex>1</trackindex><clipindex>9</clipindex></link>
+            <link><linkclipref>a1-8</linkclipref><mediatype>audio</mediatype><trackindex>1</trackindex><clipindex>9</clipindex></link>
+          </clipitem>
+          <clipitem id="a1-9"><name>speaker 10</name><duration>2289</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>635</start><end>696</end><in>910</in><out>971</out>
+            <file id="file-raw"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <link><linkclipref>v1-9</linkclipref><mediatype>video</mediatype><trackindex>1</trackindex><clipindex>10</clipindex></link>
+            <link><linkclipref>a1-9</linkclipref><mediatype>audio</mediatype><trackindex>1</trackindex><clipindex>10</clipindex></link>
+          </clipitem>
+          <clipitem id="a1-10"><name>speaker 11 [HALF]</name><duration>2289</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>696</start><end>702</end><in>972</in><out>978</out>
+            <file id="file-raw"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <link><linkclipref>v1-10</linkclipref><mediatype>video</mediatype><trackindex>1</trackindex><clipindex>11</clipindex></link>
+            <link><linkclipref>a1-10</linkclipref><mediatype>audio</mediatype><trackindex>1</trackindex><clipindex>11</clipindex></link>
+          </clipitem>
+          <clipitem id="a1-11"><name>speaker 12 [HALF]</name><duration>2289</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>702</start><end>834</end><in>1042</in><out>1174</out>
+            <file id="file-raw"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <link><linkclipref>v1-11</linkclipref><mediatype>video</mediatype><trackindex>1</trackindex><clipindex>12</clipindex></link>
+            <link><linkclipref>a1-11</linkclipref><mediatype>audio</mediatype><trackindex>1</trackindex><clipindex>12</clipindex></link>
+          </clipitem>
+          <clipitem id="a1-12"><name>speaker 13</name><duration>2289</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>834</start><end>841</end><in>1174</in><out>1181</out>
+            <file id="file-raw"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <link><linkclipref>v1-12</linkclipref><mediatype>video</mediatype><trackindex>1</trackindex><clipindex>13</clipindex></link>
+            <link><linkclipref>a1-12</linkclipref><mediatype>audio</mediatype><trackindex>1</trackindex><clipindex>13</clipindex></link>
+          </clipitem>
+          <clipitem id="a1-13"><name>speaker 14</name><duration>2289</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>841</start><end>958</end><in>1236</in><out>1353</out>
+            <file id="file-raw"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <link><linkclipref>v1-13</linkclipref><mediatype>video</mediatype><trackindex>1</trackindex><clipindex>14</clipindex></link>
+            <link><linkclipref>a1-13</linkclipref><mediatype>audio</mediatype><trackindex>1</trackindex><clipindex>14</clipindex></link>
+          </clipitem>
+          <clipitem id="a1-14"><name>speaker 15</name><duration>2289</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>958</start><end>1028</end><in>1402</in><out>1472</out>
+            <file id="file-raw"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <link><linkclipref>v1-14</linkclipref><mediatype>video</mediatype><trackindex>1</trackindex><clipindex>15</clipindex></link>
+            <link><linkclipref>a1-14</linkclipref><mediatype>audio</mediatype><trackindex>1</trackindex><clipindex>15</clipindex></link>
+          </clipitem>
+          <clipitem id="a1-15"><name>speaker 16 [HALF]</name><duration>2289</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>1028</start><end>1033</end><in>1472</in><out>1477</out>
+            <file id="file-raw"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <link><linkclipref>v1-15</linkclipref><mediatype>video</mediatype><trackindex>1</trackindex><clipindex>16</clipindex></link>
+            <link><linkclipref>a1-15</linkclipref><mediatype>audio</mediatype><trackindex>1</trackindex><clipindex>16</clipindex></link>
+          </clipitem>
+          <clipitem id="a1-16"><name>speaker 17 [HALF]</name><duration>2289</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>1033</start><end>1161</end><in>1487</in><out>1615</out>
+            <file id="file-raw"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <link><linkclipref>v1-16</linkclipref><mediatype>video</mediatype><trackindex>1</trackindex><clipindex>17</clipindex></link>
+            <link><linkclipref>a1-16</linkclipref><mediatype>audio</mediatype><trackindex>1</trackindex><clipindex>17</clipindex></link>
+          </clipitem>
+          <clipitem id="a1-17"><name>speaker 18 [HALF]</name><duration>2289</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>1161</start><end>1163</end><in>1630</in><out>1632</out>
+            <file id="file-raw"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <link><linkclipref>v1-17</linkclipref><mediatype>video</mediatype><trackindex>1</trackindex><clipindex>18</clipindex></link>
+            <link><linkclipref>a1-17</linkclipref><mediatype>audio</mediatype><trackindex>1</trackindex><clipindex>18</clipindex></link>
+          </clipitem>
+          <clipitem id="a1-18"><name>speaker 19</name><duration>2289</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>1163</start><end>1281</end><in>1632</in><out>1750</out>
+            <file id="file-raw"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <link><linkclipref>v1-18</linkclipref><mediatype>video</mediatype><trackindex>1</trackindex><clipindex>19</clipindex></link>
+            <link><linkclipref>a1-18</linkclipref><mediatype>audio</mediatype><trackindex>1</trackindex><clipindex>19</clipindex></link>
+          </clipitem>
+          <clipitem id="a1-19"><name>speaker 20</name><duration>2289</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>1281</start><end>1366</end><in>1782</in><out>1867</out>
+            <file id="file-raw"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <link><linkclipref>v1-19</linkclipref><mediatype>video</mediatype><trackindex>1</trackindex><clipindex>20</clipindex></link>
+            <link><linkclipref>a1-19</linkclipref><mediatype>audio</mediatype><trackindex>1</trackindex><clipindex>20</clipindex></link>
+          </clipitem>
+          <clipitem id="a1-20"><name>speaker 21</name><duration>2289</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>1366</start><end>1552</end><in>2037</in><out>2223</out>
+            <file id="file-raw"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <link><linkclipref>v1-20</linkclipref><mediatype>video</mediatype><trackindex>1</trackindex><clipindex>21</clipindex></link>
+            <link><linkclipref>a1-20</linkclipref><mediatype>audio</mediatype><trackindex>1</trackindex><clipindex>21</clipindex></link>
+          </clipitem><outputchannelindex>1</outputchannelindex></track>
+        <track>
+          <clipitem id="WHOOSH-0"><name>WHOOSH: full 1 enter</name><duration>30</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>249</start><end>279</end><in>0</in><out>30</out>
+            <file id="file-sfx-whoosh_deep"><name>whoosh_deep.wav</name><pathurl>sfx/whoosh_deep.wav</pathurl><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><duration>30</duration>
+              <media><audio><samplecharacteristics><depth>16</depth><samplerate>48000</samplerate></samplecharacteristics><channelcount>1</channelcount></audio></media></file><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+              <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.31623</value></parameter></effect></filter>
+          </clipitem>
+          <clipitem id="WHOOSH-1"><name>WHOOSH: zoom punch-in</name><duration>30</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>404</start><end>434</end><in>0</in><out>30</out>
+            <file id="file-sfx-whoosh_hollow"><name>whoosh_hollow.wav</name><pathurl>sfx/whoosh_hollow.wav</pathurl><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><duration>30</duration>
+              <media><audio><samplecharacteristics><depth>16</depth><samplerate>48000</samplerate></samplecharacteristics><channelcount>1</channelcount></audio></media></file><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+              <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.25119</value></parameter></effect></filter>
+          </clipitem>
+          <clipitem id="WHOOSH-2"><name>WHOOSH: half 1 slide down</name><duration>30</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>496</start><end>526</end><in>0</in><out>30</out>
+            <file id="file-sfx-whoosh_hollow"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+              <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.25119</value></parameter></effect></filter>
+          </clipitem>
+          <clipitem id="WHOOSH-3"><name>WHOOSH: half 1 slide up</name><duration>30</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>618</start><end>648</end><in>0</in><out>30</out>
+            <file id="file-sfx-whoosh_transition"><name>whoosh_transition.wav</name><pathurl>sfx/whoosh_transition.wav</pathurl><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><duration>30</duration>
+              <media><audio><samplecharacteristics><depth>16</depth><samplerate>48000</samplerate></samplecharacteristics><channelcount>1</channelcount></audio></media></file><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+              <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.25119</value></parameter></effect></filter>
+          </clipitem>
+          <clipitem id="WHOOSH-4"><name>WHOOSH: half 2 slide down</name><duration>30</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>680</start><end>710</end><in>0</in><out>30</out>
+            <file id="file-sfx-whoosh_deep"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+              <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.25119</value></parameter></effect></filter>
+          </clipitem>
+          <clipitem id="WHOOSH-5"><name>WHOOSH: full 2 enter</name><duration>30</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>822</start><end>852</end><in>0</in><out>30</out>
+            <file id="file-sfx-whoosh_deep"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+              <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.31623</value></parameter></effect></filter>
+          </clipitem>
+          <clipitem id="WHOOSH-6"><name>WHOOSH: full 2 exit</name><duration>30</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>943</start><end>973</end><in>0</in><out>30</out>
+            <file id="file-sfx-whoosh_transition"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+              <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.25119</value></parameter></effect></filter>
+          </clipitem>
+          <clipitem id="WHOOSH-7"><name>WHOOSH: half 3 slide down</name><duration>30</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>1012</start><end>1042</end><in>0</in><out>30</out>
+            <file id="file-sfx-whoosh_hollow"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+              <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.25119</value></parameter></effect></filter>
+          </clipitem>
+          <clipitem id="WHOOSH-8"><name>WHOOSH: full 3 enter</name><duration>30</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>1152</start><end>1182</end><in>0</in><out>30</out>
+            <file id="file-sfx-whoosh_deep"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+              <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.31623</value></parameter></effect></filter>
+          </clipitem>
+          <clipitem id="WHOOSH-9"><name>WHOOSH: brands → high-end text swap</name><duration>30</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>1270</start><end>1300</end><in>0</in><out>30</out>
+            <file id="file-sfx-whoosh_transition"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+              <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.25119</value></parameter></effect></filter>
+          </clipitem>
+          <clipitem id="WHOOSH-10"><name>WHOOSH: full 3 exit</name><duration>30</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>1350</start><end>1380</end><in>0</in><out>30</out>
+            <file id="file-sfx-whoosh_transition"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+              <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.25119</value></parameter></effect></filter>
+          </clipitem><outputchannelindex>1</outputchannelindex></track>
+        <track>
+          <clipitem id="TEXTURE-0"><name>TEXTURE: name tag</name><duration>3</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>4</start><end>7</end><in>0</in><out>3</out>
+            <file id="file-sfx-pop"><name>pop.wav</name><pathurl>sfx/pop.wav</pathurl><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><duration>3</duration>
+              <media><audio><samplecharacteristics><depth>16</depth><samplerate>48000</samplerate></samplecharacteristics><channelcount>1</channelcount></audio></media></file><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+              <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.39811</value></parameter></effect></filter>
+          </clipitem>
+          <clipitem id="TEXTURE-1"><name>TEXTURE: step 1 appear</name><duration>2</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>10</start><end>12</end><in>0</in><out>2</out>
+            <file id="file-sfx-ui_click"><name>ui_click.wav</name><pathurl>sfx/ui_click.wav</pathurl><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><duration>2</duration>
+              <media><audio><samplecharacteristics><depth>16</depth><samplerate>48000</samplerate></samplecharacteristics><channelcount>1</channelcount></audio></media></file><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+              <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.44668</value></parameter></effect></filter>
+          </clipitem>
+          <clipitem id="TEXTURE-2"><name>TEXTURE: step 2 appear</name><duration>2</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>15</start><end>17</end><in>0</in><out>2</out>
+            <file id="file-sfx-ui_click"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+              <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.44668</value></parameter></effect></filter>
+          </clipitem>
+          <clipitem id="TEXTURE-3"><name>TEXTURE: step 3 appear</name><duration>2</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>20</start><end>22</end><in>0</in><out>2</out>
+            <file id="file-sfx-ui_click"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+              <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.44668</value></parameter></effect></filter>
+          </clipitem>
+          <clipitem id="TEXTURE-4"><name>TEXTURE: slider card</name><duration>2</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>102</start><end>104</end><in>0</in><out>2</out>
+            <file id="file-sfx-ui_click"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+              <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.44668</value></parameter></effect></filter>
+          </clipitem>
+          <clipitem id="TEXTURE-5"><name>TEXTURE: slider → professional</name><duration>4</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>194</start><end>198</end><in>0</in><out>4</out>
+            <file id="file-sfx-scifi_click"><name>scifi_click.wav</name><pathurl>sfx/scifi_click.wav</pathurl><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><duration>4</duration>
+              <media><audio><samplecharacteristics><depth>16</depth><samplerate>48000</samplerate></samplecharacteristics><channelcount>1</channelcount></audio></media></file><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+              <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.50119</value></parameter></effect></filter>
+          </clipitem>
+          <clipitem id="TEXTURE-6"><name>TEXTURE: stepper card (1)</name><duration>2</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>208</start><end>210</end><in>0</in><out>2</out>
+            <file id="file-sfx-ui_click"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+              <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.44668</value></parameter></effect></filter>
+          </clipitem>
+          <clipitem id="TEXTURE-7"><name>TEXTURE: step 1 fill</name><duration>4</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>210</start><end>214</end><in>0</in><out>4</out>
+            <file id="file-sfx-scifi_click"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+              <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.50119</value></parameter></effect></filter>
+          </clipitem>
+          <clipitem id="TEXTURE-8"><name>TEXTURE: stepper card (2)</name><duration>2</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>637</start><end>639</end><in>0</in><out>2</out>
+            <file id="file-sfx-ui_click"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+              <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.44668</value></parameter></effect></filter>
+          </clipitem>
+          <clipitem id="TEXTURE-9"><name>TEXTURE: step 2 fill</name><duration>4</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>641</start><end>645</end><in>0</in><out>4</out>
+            <file id="file-sfx-scifi_click"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+              <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.50119</value></parameter></effect></filter>
+          </clipitem>
+          <clipitem id="TEXTURE-10"><name>TEXTURE: stepper card (3)</name><duration>2</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>962</start><end>964</end><in>0</in><out>2</out>
+            <file id="file-sfx-ui_click"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+              <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.44668</value></parameter></effect></filter>
+          </clipitem>
+          <clipitem id="TEXTURE-11"><name>TEXTURE: step 3 fill</name><duration>4</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>965</start><end>969</end><in>0</in><out>4</out>
+            <file id="file-sfx-scifi_click"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+              <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.50119</value></parameter></effect></filter>
+          </clipitem>
+          <clipitem id="TEXTURE-12"><name>TEXTURE: recap stepper</name><duration>2</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>1370</start><end>1372</end><in>0</in><out>2</out>
+            <file id="file-sfx-ui_click"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+              <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.44668</value></parameter></effect></filter>
+          </clipitem>
+          <clipitem id="TEXTURE-13"><name>TEXTURE: recap step 1</name><duration>4</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>1421</start><end>1425</end><in>0</in><out>4</out>
+            <file id="file-sfx-scifi_click"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+              <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.50119</value></parameter></effect></filter>
+          </clipitem>
+          <clipitem id="TEXTURE-14"><name>TEXTURE: recap step 2</name><duration>4</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>1430</start><end>1434</end><in>0</in><out>4</out>
+            <file id="file-sfx-scifi_click"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+              <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.50119</value></parameter></effect></filter>
+          </clipitem>
+          <clipitem id="TEXTURE-15"><name>TEXTURE: recap step 3</name><duration>4</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>1436</start><end>1440</end><in>0</in><out>4</out>
+            <file id="file-sfx-scifi_click"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+              <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.50119</value></parameter></effect></filter>
+          </clipitem>
+          <clipitem id="TEXTURE-16"><name>TEXTURE: recap slider</name><duration>2</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>1496</start><end>1498</end><in>0</in><out>2</out>
+            <file id="file-sfx-ui_click"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+              <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.44668</value></parameter></effect></filter>
+          </clipitem>
+          <clipitem id="TEXTURE-17"><name>TEXTURE: conclusion</name><duration>36</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>1541</start><end>1577</end><in>0</in><out>36</out>
+            <file id="file-sfx-success"><name>success.wav</name><pathurl>sfx/success.wav</pathurl><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><duration>36</duration>
+              <media><audio><samplecharacteristics><depth>16</depth><samplerate>48000</samplerate></samplecharacteristics><channelcount>1</channelcount></audio></media></file><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+              <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.44668</value></parameter></effect></filter>
+          </clipitem>
+          <clipitem id="TEXTURE-18"><name>TEXTURE: huge arrow icon</name><duration>3</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>342</start><end>345</end><in>0</in><out>3</out>
+            <file id="file-sfx-pop"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+              <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.50119</value></parameter></effect></filter>
+          </clipitem>
+          <clipitem id="TEXTURE-19"><name>TEXTURE: huge star icon</name><duration>3</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>355</start><end>358</end><in>0</in><out>3</out>
+            <file id="file-sfx-pop"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+              <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.50119</value></parameter></effect></filter>
+          </clipitem>
+          <clipitem id="TEXTURE-20"><name>TEXTURE: huge shape 1</name><duration>27</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>377</start><end>404</end><in>0</in><out>27</out>
+            <file id="file-sfx-scifi_impact"><name>scifi_impact.wav</name><pathurl>sfx/scifi_impact.wav</pathurl><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><duration>27</duration>
+              <media><audio><samplecharacteristics><depth>16</depth><samplerate>48000</samplerate></samplecharacteristics><channelcount>1</channelcount></audio></media></file><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+              <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.44668</value></parameter></effect></filter>
+          </clipitem>
+          <clipitem id="TEXTURE-21"><name>TEXTURE: huge shape 2</name><duration>3</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>388</start><end>391</end><in>0</in><out>3</out>
+            <file id="file-sfx-pop"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+              <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.50119</value></parameter></effect></filter>
+          </clipitem>
+          <clipitem id="TEXTURE-22"><name>TEXTURE: −25% badge</name><duration>3</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>536</start><end>539</end><in>0</in><out>3</out>
+            <file id="file-sfx-pop"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+              <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.50119</value></parameter></effect></filter>
+          </clipitem>
+          <clipitem id="TEXTURE-23"><name>TEXTURE: shrink particles</name><duration>4</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>560</start><end>564</end><in>0</in><out>4</out>
+            <file id="file-sfx-scifi_click"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+              <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.44668</value></parameter></effect></filter>
+          </clipitem>
+          <clipitem id="TEXTURE-24"><name>TEXTURE: sparkle</name><duration>1</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>611</start><end>612</end><in>0</in><out>1</out>
+            <file id="file-sfx-gear_tick"><name>gear_tick.wav</name><pathurl>sfx/gear_tick.wav</pathurl><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><duration>1</duration>
+              <media><audio><samplecharacteristics><depth>16</depth><samplerate>48000</samplerate></samplecharacteristics><channelcount>1</channelcount></audio></media></file><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+              <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.44668</value></parameter></effect></filter>
+          </clipitem>
+          <clipitem id="TEXTURE-25"><name>TEXTURE: sparkle</name><duration>1</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>614</start><end>615</end><in>0</in><out>1</out>
+            <file id="file-sfx-gear_tick"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+              <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.44668</value></parameter></effect></filter>
+          </clipitem>
+          <clipitem id="TEXTURE-26"><name>TEXTURE: all effects on</name><duration>2</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>694</start><end>696</end><in>0</in><out>2</out>
+            <file id="file-sfx-ui_click"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+              <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.50119</value></parameter></effect></filter>
+          </clipitem>
+          <clipitem id="TEXTURE-27"><name>TEXTURE: effect off 1</name><duration>1</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>751</start><end>752</end><in>0</in><out>1</out>
+            <file id="file-sfx-gear_tick"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+              <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.35481</value></parameter></effect></filter>
+          </clipitem>
+          <clipitem id="TEXTURE-28"><name>TEXTURE: effect off 2</name><duration>1</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>757</start><end>758</end><in>0</in><out>1</out>
+            <file id="file-sfx-gear_tick"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+              <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.35481</value></parameter></effect></filter>
+          </clipitem>
+          <clipitem id="TEXTURE-29"><name>TEXTURE: effect off 3</name><duration>1</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>763</start><end>764</end><in>0</in><out>1</out>
+            <file id="file-sfx-gear_tick"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+              <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.35481</value></parameter></effect></filter>
+          </clipitem>
+          <clipitem id="TEXTURE-30"><name>TEXTURE: effect off 4</name><duration>1</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>769</start><end>770</end><in>0</in><out>1</out>
+            <file id="file-sfx-gear_tick"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+              <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.35481</value></parameter></effect></filter>
+          </clipitem>
+          <clipitem id="TEXTURE-31"><name>TEXTURE: effect off 5</name><duration>1</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>776</start><end>777</end><in>0</in><out>1</out>
+            <file id="file-sfx-gear_tick"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+              <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.35481</value></parameter></effect></filter>
+          </clipitem>
+          <clipitem id="TEXTURE-32"><name>TEXTURE: effect off 6</name><duration>1</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>782</start><end>783</end><in>0</in><out>1</out>
+            <file id="file-sfx-gear_tick"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+              <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.35481</value></parameter></effect></filter>
+          </clipitem>
+          <clipitem id="TEXTURE-33"><name>TEXTURE: effect off 7</name><duration>1</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>788</start><end>789</end><in>0</in><out>1</out>
+            <file id="file-sfx-gear_tick"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+              <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.35481</value></parameter></effect></filter>
+          </clipitem>
+          <clipitem id="TEXTURE-34"><name>TEXTURE: effect off 8</name><duration>1</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>794</start><end>795</end><in>0</in><out>1</out>
+            <file id="file-sfx-gear_tick"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+              <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.35481</value></parameter></effect></filter>
+          </clipitem>
+          <clipitem id="TEXTURE-35"><name>TEXTURE: special (Glow) highlight</name><duration>27</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>804</start><end>831</end><in>0</in><out>27</out>
+            <file id="file-sfx-scifi_impact"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+              <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.50119</value></parameter></effect></filter>
+          </clipitem>
+          <clipitem id="TEXTURE-36"><name>TEXTURE: card 1 pop</name><duration>1</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>840</start><end>841</end><in>0</in><out>1</out>
+            <file id="file-sfx-gear_tick"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+              <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.35481</value></parameter></effect></filter>
+          </clipitem>
+          <clipitem id="TEXTURE-37"><name>TEXTURE: card 2 pop</name><duration>1</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>842</start><end>843</end><in>0</in><out>1</out>
+            <file id="file-sfx-gear_tick"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+              <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.35481</value></parameter></effect></filter>
+          </clipitem>
+          <clipitem id="TEXTURE-38"><name>TEXTURE: card 3 pop</name><duration>1</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>844</start><end>845</end><in>0</in><out>1</out>
+            <file id="file-sfx-gear_tick"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+              <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.35481</value></parameter></effect></filter>
+          </clipitem>
+          <clipitem id="TEXTURE-39"><name>TEXTURE: card 4 pop</name><duration>1</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>845</start><end>846</end><in>0</in><out>1</out>
+            <file id="file-sfx-gear_tick"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+              <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.35481</value></parameter></effect></filter>
+          </clipitem>
+          <clipitem id="TEXTURE-40"><name>TEXTURE: card 5 pop</name><duration>1</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>847</start><end>848</end><in>0</in><out>1</out>
+            <file id="file-sfx-gear_tick"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+              <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.35481</value></parameter></effect></filter>
+          </clipitem>
+          <clipitem id="TEXTURE-41"><name>TEXTURE: spotlight lands</name><duration>27</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>936</start><end>963</end><in>0</in><out>27</out>
+            <file id="file-sfx-scifi_impact"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+              <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.50119</value></parameter></effect></filter>
+          </clipitem>
+          <clipitem id="TEXTURE-42"><name>TEXTURE: cursor click</name><duration>2</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>941</start><end>943</end><in>0</in><out>2</out>
+            <file id="file-sfx-ui_click"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+              <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.50119</value></parameter></effect></filter>
+          </clipitem>
+          <clipitem id="TEXTURE-43"><name>TEXTURE: harsh black</name><duration>3</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>1085</start><end>1088</end><in>0</in><out>3</out>
+            <file id="file-sfx-pop"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+              <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.50119</value></parameter></effect></filter>
+          </clipitem>
+          <clipitem id="TEXTURE-44"><name>TEXTURE: harsh white</name><duration>3</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>1107</start><end>1110</end><in>0</in><out>3</out>
+            <file id="file-sfx-pop"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+              <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.50119</value></parameter></effect></filter>
+          </clipitem>
+          <clipitem id="TEXTURE-45"><name>TEXTURE: bright red</name><duration>3</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>1126</start><end>1129</end><in>0</in><out>3</out>
+            <file id="file-sfx-pop"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+              <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.50119</value></parameter></effect></filter>
+          </clipitem>
+          <clipitem id="TEXTURE-46"><name>TEXTURE: TOO HARSH stamp</name><duration>4</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>1160</start><end>1164</end><in>0</in><out>4</out>
+            <file id="file-sfx-scifi_click"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+              <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.50119</value></parameter></effect></filter>
+          </clipitem>
+          <clipitem id="TEXTURE-47"><name>TEXTURE: brand card 1</name><duration>1</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>1176</start><end>1177</end><in>0</in><out>1</out>
+            <file id="file-sfx-gear_tick"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+              <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.39811</value></parameter></effect></filter>
+          </clipitem>
+          <clipitem id="TEXTURE-48"><name>TEXTURE: brand card 2</name><duration>1</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>1181</start><end>1182</end><in>0</in><out>1</out>
+            <file id="file-sfx-gear_tick"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+              <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.39811</value></parameter></effect></filter>
+          </clipitem>
+          <clipitem id="TEXTURE-49"><name>TEXTURE: brand card 3</name><duration>1</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>1186</start><end>1187</end><in>0</in><out>1</out>
+            <file id="file-sfx-gear_tick"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+              <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.39811</value></parameter></effect></filter>
+          </clipitem>
+          <clipitem id="TEXTURE-50"><name>TEXTURE: brand card 4</name><duration>1</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>1191</start><end>1192</end><in>0</in><out>1</out>
+            <file id="file-sfx-gear_tick"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+              <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.39811</value></parameter></effect></filter>
+          </clipitem>
+          <clipitem id="TEXTURE-51"><name>TEXTURE: brand card 5</name><duration>1</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>1196</start><end>1197</end><in>0</in><out>1</out>
+            <file id="file-sfx-gear_tick"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+              <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.39811</value></parameter></effect></filter>
+          </clipitem>
+          <clipitem id="TEXTURE-52"><name>TEXTURE: brand card 6</name><duration>1</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>1202</start><end>1203</end><in>0</in><out>1</out>
+            <file id="file-sfx-gear_tick"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+              <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.39811</value></parameter></effect></filter>
+          </clipitem>
+          <clipitem id="TEXTURE-53"><name>TEXTURE: brand card 7</name><duration>1</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>1207</start><end>1208</end><in>0</in><out>1</out>
+            <file id="file-sfx-gear_tick"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+              <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.39811</value></parameter></effect></filter>
+          </clipitem>
+          <clipitem id="TEXTURE-54"><name>TEXTURE: dull blue chip</name><duration>2</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>1232</start><end>1234</end><in>0</in><out>2</out>
+            <file id="file-sfx-ui_click"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+              <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.44668</value></parameter></effect></filter>
+          </clipitem>
+          <clipitem id="TEXTURE-55"><name>TEXTURE: sage chip</name><duration>2</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>1255</start><end>1257</end><in>0</in><out>2</out>
+            <file id="file-sfx-ui_click"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+              <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.44668</value></parameter></effect></filter>
+          </clipitem><outputchannelindex>1</outputchannelindex></track>
+        <track>
+          <clipitem id="RISER-0"><name>RISER: into point 1 visual (~5s after hook)</name><duration>60</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>203</start><end>263</end><in>0</in><out>60</out>
+            <file id="file-sfx-riser_bass"><name>riser_bass.wav</name><pathurl>sfx/riser_bass.wav</pathurl><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><duration>60</duration>
+              <media><audio><samplecharacteristics><depth>16</depth><samplerate>48000</samplerate></samplecharacteristics><channelcount>1</channelcount></audio></media></file><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+              <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.56234</value></parameter></effect></filter>
+          </clipitem>
+          <clipitem id="RISER-1"><name>RISER: into spotlight</name><duration>60</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>777</start><end>837</end><in>0</in><out>60</out>
+            <file id="file-sfx-riser_metal"><name>riser_metal.wav</name><pathurl>sfx/riser_metal.wav</pathurl><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><duration>60</duration>
+              <media><audio><samplecharacteristics><depth>16</depth><samplerate>48000</samplerate></samplecharacteristics><channelcount>1</channelcount></audio></media></file><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+              <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.56234</value></parameter></effect></filter>
+          </clipitem>
+          <clipitem id="RISER-2"><name>RISER: into luxury brands</name><duration>60</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>1106</start><end>1166</end><in>0</in><out>60</out>
+            <file id="file-sfx-riser_bass"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+              <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.56234</value></parameter></effect></filter>
+          </clipitem>
+          <clipitem id="RISER-3"><name>RISER: into recap</name><duration>60</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>1310</start><end>1370</end><in>0</in><out>60</out>
+            <file id="file-sfx-riser_metal"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+              <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.56234</value></parameter></effect></filter>
+          </clipitem><outputchannelindex>1</outputchannelindex></track>
+        <track>
+          <clipitem id="HIT-0"><name>HIT: hit under riser_bass</name><duration>42</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>263</start><end>305</end><in>0</in><out>42</out>
+            <file id="file-sfx-hit"><name>hit.wav</name><pathurl>sfx/hit.wav</pathurl><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><duration>42</duration>
+              <media><audio><samplecharacteristics><depth>16</depth><samplerate>48000</samplerate></samplecharacteristics><channelcount>1</channelcount></audio></media></file><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+              <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.35481</value></parameter></effect></filter>
+          </clipitem>
+          <clipitem id="HIT-1"><name>HIT: hit under riser_metal</name><duration>42</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>837</start><end>879</end><in>0</in><out>42</out>
+            <file id="file-sfx-hit"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+              <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.35481</value></parameter></effect></filter>
+          </clipitem>
+          <clipitem id="HIT-2"><name>HIT: hit under riser_bass</name><duration>42</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>1166</start><end>1208</end><in>0</in><out>42</out>
+            <file id="file-sfx-hit"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+              <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.35481</value></parameter></effect></filter>
+          </clipitem>
+          <clipitem id="HIT-3"><name>HIT: hit under riser_metal</name><duration>42</duration><rate><timebase>30</timebase><ntsc>FALSE</ntsc></rate><start>1370</start><end>1412</end><in>0</in><out>42</out>
+            <file id="file-sfx-hit"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+            <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+              <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.35481</value></parameter></effect></filter>
+          </clipitem><outputchannelindex>1</outputchannelindex></track>
+      </audio>
+    </media>
+  </sequence>
+</xmeml>
