@@ -1,6 +1,6 @@
 # Reel 01: "3 mistakes that make your edits look amateur"
 
-`short-form-remotion` skill ke saare rules se bani pehli poori reel (Remotion).
+`viral-reel-editor` skill ke saare rules se bani pehli poori reel (Remotion).
 
 **Footage:** Joseph Eid ki raw footage `3 things from beginner to pro.mp4` ([free Drive folder](https://drive.google.com/drive/folders/1WJMeuTvYZJgufE9_Xpkp6xThzQWXhR-G)), jo usne practice ke liye share ki hai. Sirf practice/demo ke liye, post karne ke liye nahi.
 
