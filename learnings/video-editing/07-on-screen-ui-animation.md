@@ -37,7 +37,7 @@ Talking head reel me speaker jo bol raha hai, wahi baat **ek chhote app/UI card*
 - **Caption upar, UI neeche.** Dono frame ke beech se neeche wale hisse me.
 - UI card **mic ke upar bhi aa sakta hai**. Face kabhi cover nahi.
 - Card ki width frame ka ~45–75%. Kabhi center, kabhi thoda ek side (client list right side me).
-- Frame ka neeche wala hissa thoda **dark** (gradient/vignette), taaki dark cards aur white text pop karein.
+- **Background ko dark + blur karo, card ke peeche** (Nikhil ke brief ka rule): jab card screen par ho, frame ke neeche wale hisse par dark gradient (beech se neeche, black 0 → 50–60%) aur card ke peeche ki footage blur. Card ke saath hi fade in/out ho. Isse dark card aur white text saaf pop karte hain.
 
 ## UI card ka style
 

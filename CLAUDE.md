@@ -12,4 +12,5 @@ Ye repo Nikhil ka learning log hai. Rule simple hai: **jo jo Nikhil seekhta hai,
    - `learnings/README.md` ke index me nayi entry jodo.
    - Commit karke push karo.
 3. Jab Nikhil koi design, video ya edit ka kaam bole, pehle check karo ki koi purani learning lagu hoti hai ya nahi, aur use apply karo.
-4. Notes Hinglish me likho, Nikhil ki tarah. Technical terms (blur, opacity, drop shadow) English me hi rehne do.
+4. **Remotion / short-form video editing ka koi bhi kaam ho** (captions, hook, animation, UI overlay, full edit), to pehle `.claude/skills/short-form-remotion/SKILL.md` follow karo. Wo Nikhil ka poora editing brief hai, aur saare lessons se juda hua hai.
+5. Notes Hinglish me likho, Nikhil ki tarah. Technical terms (blur, opacity, drop shadow) English me hi rehne do.

@@ -10,7 +10,7 @@ Video editing Lesson 07 ka "Next 30 days" calendar card, code se bana hua. Reel 
 | `render.js` | HTML ko 30fps PNG frames me render karta hai (Playwright) |
 | `output/calendar-card-preview.mp4` | Dekhne ke liye: dark background + "to posting" caption |
 | `output/calendar-card-transparent.webm` | Transparent overlay (VP9 alpha). Web, CapCut, Premiere (plugin ke saath) |
-| `output/calendar-card-transparent.mov` | Transparent overlay (ProRes 4444). After Effects, Premiere, Final Cut, DaVinci. 44MB, isliye git me nahi hai; chat me bheja gaya |
+| `output/calendar-card-transparent.mov` | Transparent overlay (QuickTime PNG codec, lossless alpha, 11MB). After Effects, Premiere, Final Cut, DaVinci. Git me nahi hai; chat me bheja gaya |
 
 Sab videos **1080×1920, 30fps, 4 second** ke hain. Card already sahi jagah par hai (caption ke neeche, chest level), isliye reel ke upar seedha drop kar sakte ho.
 
@@ -42,6 +42,6 @@ NODE_PATH=/opt/node-tools/node_modules node render.js frames-alpha
 NODE_PATH=/opt/node-tools/node_modules node render.js frames-preview preview
 
 ffmpeg -framerate 30 -i frames-preview/f_%04d.png -c:v libx264 -pix_fmt yuv420p -crf 18 output/calendar-card-preview.mp4
-ffmpeg -framerate 30 -i frames-alpha/f_%04d.png -c:v prores_ks -profile:v 4 -pix_fmt yuva444p10le -qscale:v 11 output/calendar-card-transparent.mov
+ffmpeg -framerate 30 -i frames-alpha/f_%04d.png -c:v png -pix_fmt rgba output/calendar-card-transparent.mov
 ffmpeg -framerate 30 -i frames-alpha/f_%04d.png -c:v libvpx-vp9 -pix_fmt yuva420p -b:v 0 -crf 30 -auto-alt-ref 0 output/calendar-card-transparent.webm
 ```
