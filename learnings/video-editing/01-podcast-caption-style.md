@@ -2,6 +2,8 @@
 
 ![Breakdown](assets/01-podcast-caption-breakdown.webp)
 
+> **Update (Lesson 02):** Creator ne apne exact rules bata diye hain. Fonts **Creato Display** + **Apple Garamond**, sans color `#F3F3F3`, keyword par **glow** (sirf drop shadow nahi), text **lower third** me, aur animation ≤ 1.5s. Jahan ye note aur [Lesson 02](02-caption-typography-system.md) alag hain, wahan Lesson 02 follow karo.
+
 **Format:** 9:16 vertical podcast clip (Reels / Shorts / TikTok)
 **Example text:** "What's the **30,000ft** view on..."
 
