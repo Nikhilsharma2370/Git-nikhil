@@ -40,7 +40,13 @@ Talking head ke beech-beech me jo **animated scenes** aate hain (speaker ki jaga
 
 ![Person centric](assets/05-scenes-person-centric.webp)
 
-**Person in center:** person ka cutout beech me, aur **peeche ek graphic**:
+**Person in center:** person ka cutout beech me, aur **peeche ek graphic**.
+
+> Creator ke exact words: *"these scenes place people and typically place a graphic behind them in order to support them and emphasize the person on the screen"*
+>
+> Matlab: graphic ka kaam sirf **person ko support aur emphasize** karna hai. Wo khud hero nahi hai.
+
+Examples:
 - Polaroid/photo frame (DRAKE wala, "casually on the CALL")
 - Solid color block, jaise red rectangle ke saamne "MARCZELL KLEIN"
 - Red circle, jaise "GLOBAL" wale me
