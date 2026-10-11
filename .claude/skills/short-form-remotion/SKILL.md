@@ -9,7 +9,7 @@ This is the house style. Every rule below comes from Nikhil's brief and the less
 
 Canvas: **1080×1920, 30fps**. Speaker footage via `<OffthreadVideo>`; assets via `staticFile()`; all motion from `useCurrentFrame()` + `interpolate()` / `spring()` (never CSS transitions).
 
-The brief has 9 parts. Work through them in this order.
+The brief has 9 parts (+ setup notes in §10). Work through them in this order.
 
 ---
 
@@ -116,5 +116,15 @@ Graphs: dark background, near-invisible grid, one smooth line + fading gradient 
 - Music only under the talking head (−19 dB), never under animations. Voice is never covered.
 - Order: analyze frame by frame and report a cue sheet → whooshes pass → textures pass → risers/hits pass → mix check → music after approval.
 - Remotion: one `<Sequence>` track per family, `<Audio volume={10 ** (db / 20)}>`, original audio muted not deleted.
+
+## 10. Working example + setup notes
+**Reference project:** `projects/reel-01-three-mistakes/` — a full 52s reel built with every rule above (cut, transcript, captions, on-screen UI, 3 half + 3 full scenes, sound cue sheet). Start new reels by copying its structure (`timeline.ts`, `SpeakerLayer`, `Captions`, `OnScreenUI`, `scenes/`, `Sound.tsx`).
+
+Pipeline that worked here:
+1. Cut silences with `ffmpeg silencedetect=noise=-30dB:d=0.28`, keep ~0.1s breath each side, 12 ms audio fades per cut. **Listen for retakes** (transcribe each kept range; a repeated phrase = bad take, keep the complete one).
+2. Transcribe the **cut** footage directly (faster-whisper `small.en`, `word_timestamps=True`, pass a numpy array — the bundled `av` decoder fails). Don't remap raw timestamps; they drift up to ~0.9s.
+3. In this cloud container, Chrome can't load Google Fonts (proxy cert) → download woff2 with curl into `public/fonts/` and load with `FontFace` + `delayRender`. Render with `--browser-executable=/opt/pw-browsers/chromium_headless_shell-1194/chrome-linux/headless_shell`.
+4. Render 15–20 stills (`npx remotion still … --scale=0.5`) and review them before the full render.
+5. Deliverable must be ≤30 MB to send in chat → re-encode with ffmpeg (`-b:v 4M`).
 
 If a part of the brief is still missing from `learnings/`, say so and ask rather than guessing.

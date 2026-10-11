@@ -1,2 +1,5 @@
 # Bade transparent ProRes files git me nahi
 projects/**/output/*.mov
+node_modules/
+projects/**/out/
+projects/reel-01-three-mistakes/public/footage.mp4
