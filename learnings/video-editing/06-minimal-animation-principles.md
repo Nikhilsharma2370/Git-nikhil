@@ -68,43 +68,80 @@ Frame ko **3×3 grid** me baanto (rule of thirds). Har step ka apna zone hai:
 ![Design principles](assets/06-design-principles.webp)
 
 ### 1. Color: 3-tone palette
+![Color](assets/06-principle-1-color.webp)
+
 > *"use a 3 tone color palette made up of black, white and a special color"*
 
-| Scene | Off-white | Dark | Special color |
-|-------|-----------|------|---------------|
-| Text scene (life's work) | ~`#E4E2DE` | ~`#3A3A3A` | Teal ~`#3FA58A` |
-| Number scene (596,000) | ~`#E4E2DE` | ~`#3A3A3A` | Deep red ~`#9E0F0F` |
-| Object scene (sword) | ~`#ECEAE2` | ~`#3A3A3A` | Lavender purple ~`#A766E0` |
+| Scene | Light | Dark | Special color | Sampled (screenshot se) |
+|-------|-------|------|---------------|-------------------------|
+| life's work (vine) | light grey | charcoal | **Teal** | `#C2C0BE` · `#3D3A38` · `#3D8A72` |
+| LOYAL fan base 596,000 | light grey | charcoal | **Deep red** | `#C2C0BE` · `#3B3A37` · `#7B0001` |
+| IMAGINATION (sword) | **warm beige** | charcoal | **Lavender purple** | `#C8C7BA` · `#3E3C39` · `#9769BE` |
 
-- Pure black (`#000`) nahi, **charcoal** ke paas. Pure white bhi nahi, **off-white**.
-- Ek scene me sirf ek special color. Lesson 05 ki "ek accent" wali baat confirm.
-
-*(Hex values swatches dekh ke andaze se likhe hain.)*
+- Sampled colors swatches ke halftone dots ki wajah se thode **dark** aaye hain. Use karte waqt light ko `#E2E0DC` ke aas-paas aur accent ko thoda bright rakho (teal ~`#3FA585`, red ~`#8E0A0A`, purple ~`#A574D6`).
+- Pure black nahi, **charcoal** (`#3C3A38`). Pure white nahi, **light grey ya beige**.
+- Light color bhi mood ke hisaab se: cold grey (teal/red scenes) ya warm beige (purple scene).
+- Sword scene me peeche **bahut bada, faded outline text** ("47"/"AI" jaisa) bhi hai. Ye bhi depth element hai.
 
 ### 2. Fonts
+![Fonts](assets/06-principle-2-fonts.webp)
+
 > *"Use sans fonts for main text and script or other for highlighted special text"*
 
-- Lesson 02 wala hi rule: main text sans, special word script ya koi doosra contrast font.
-- Same scene ko 2 versions me dikhaya hai: sans-only aur special font wala. Special font wala zyada premium lagta hai.
+Slide me har scene ke 2 versions hain. Right wale me **blue highlight = script** aur **red highlight = sans** dikhaya hai. Isse ek naya pattern dikhta hai:
+
+```
+  The human           ← tiny script (italic serif), blue
+  brain is drawn      ← main sans, red
+
+  Position            ← tiny script
+  your brand          ← main sans
+
+  Always remember this  ← tiny script
+  branding secret       ← main sans
+
+  I can do my           ← tiny script
+  life's work           ← BADA sans, teal
+  in my                 ← tiny script
+  lifetime              ← BADA sans, teal
+```
+
+- Yahan script **chhota "kicker"** hai: connector words ("The human", "I can do my", "in my") script me, aur main idea sans me bada.
+- Lesson 02 me ulta tha (keyword script me bada). **Dono chalte hain.** Rule sirf itna hai ki 2 fonts ka contrast ho:
+  - Talking head captions → keyword script me (Lesson 02).
+  - Animated scenes → main text sans, connector words tiny script me (ye lesson).
 
 ### 3. Texts: halka gradient
+![Texts](assets/06-principle-3-texts.webp)
+
 > *"Use gradients (very light difference) for the main color of the text"*
 
-- Text ka color flat nahi hota. Upar se neeche **bahut halka gradient**, jaise teal se thoda dark teal.
+- Text ka color flat nahi. Upar se neeche **bahut halka gradient** (jaise "life's work" teal me upar thoda light, neeche thoda dark).
 - Fark itna kam ho ki dikhe nahi, bas mehsoos ho. Isse text "printed" aur rich lagta hai.
 
-### 4. Objects: shadow + texture
+### 4. Objects: casted shadow + texture
+![Objects](assets/06-principle-4-objects.webp)
+
 > *"Use casted shadows + textures on objects"*
 
-- Har object ke neeche **casted shadow** (sirf drop shadow nahi). Object ke shape jaisi parchhai, ek direction me giri hui.
-- Object par **texture**: grain, halftone, paper. Isse cutout "sticker" nahi lagta, scene ka hissa lagta hai.
+- Brain ke neeche **casted shadow** (object ke shape jaisi parchhai, ek taraf giri hui), aur upar **halftone texture**.
+- Flask: purple "Formula" text flask ke **upar overlap** karta hai, chhota "MrBeast" uske upar.
+- Naye elements jo dikhe:
+  - **Black label bar** me white text ("with your audience"). Highlight karne ka ek aur tarika.
+  - Corners par **cracks / neuron jaisi lines**, depth ke liye (Part A ka step 4).
+  - Brain ke peeche **patla circle** outline (supporting graphic).
 
 ### 5. Backgrounds: gradient + texture + casted shadow
+![Backgrounds](assets/06-principle-5-backgrounds.webp)
+
 > *"Use gradients + textures + casted shadows for backgrounds"*
 
-- Background bhi flat nahi: halka **gradient** (vignette ya ek side se light), upar **texture**, aur upar **casted shadow overlay**.
-
----
+- "Tired of **hunting** for good After Effects presets?" wala scene:
+  - Background: beige gradient + halftone texture + halki casted shadow.
+  - Beech me aankh (hero), usse **patli lines** chaaron taraf jaati hain (supporting graphic).
+  - Corners par aur aankhein, **aadhi kati hui** (depth).
+  - Text Figma jaise **selection box** me, "hunting" **red** me (special color).
+- Ye ek scene me poora system dikhata hai: BG → hero → support → depth, aur 3 colors.
 
 ## Banane ke settings (mere suggestions, creator ne numbers nahi diye)
 
