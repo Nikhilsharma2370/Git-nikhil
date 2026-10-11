@@ -10,3 +10,4 @@
 | 06 | Video Editing | [Minimal animation style: 4 build steps (BG, focal, support, depth) + 5 design principles](video-editing/06-minimal-animation-principles.md) | 2026-10-11 |
 | 07 | Design Inspiration | [UI inspiration board: 175 references, 4 styles (white minimal, brand posters, dark glow UI, abstract BG)](design-inspiration/01-ui-inspiration-board.md) | 2026-10-11 |
 | 08 | Design Inspiration | [Full graph inspiration: 11 animated chart styles, design rules, kab kaunsa, animation steps](design-inspiration/02-graph-inspiration.md) | 2026-10-11 |
+| 09 | Video Editing | [On-screen UI animation: speaker ke upar UI cards, 5 examples + 29 UI kit references](video-editing/07-on-screen-ui-animation.md) | 2026-10-11 |
