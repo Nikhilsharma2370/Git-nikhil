@@ -1,6 +1,6 @@
 # Adobe kit — After Effects + Premiere Pro editable files
 
-Use when Nikhil wants the edit "in After Effects / Premiere", "editable file", ".aep / .prproj".
+Use when Nikhil wants the edit "in After Effects / Premiere", "editable file", ".aep / .prproj" — i.e. ADOBE MODE (his default). The "what / why" and his app-wise guide are in `adobe-editing-workflow.md`; this file is the build mechanics.
 
 **Be upfront:** native `.aep` / `.prproj` files can only be saved by the Adobe apps. If you're in a cloud/Linux container (no Adobe), ship a kit that *builds* them on his machine:
 - After Effects: a script that builds the whole project and **auto-saves `<NAME>.aep`** into the kit folder.
@@ -13,12 +13,14 @@ If computer use is available on his Mac/PC, you can open the apps and run these 
   README.md                       Hinglish step-by-step (fonts → footage → AE → Premiere)
   after-effects/build_<name>.jsx  ES3 ExtendScript (from assets/adobe/build_reel_TEMPLATE.jsx)
   after-effects/reel-data.jsxinc  var DATA = {...}  (timings)
+  scene-spec.json                 half/full scene layouts (Photoshop script input)
+  photoshop/build_psd_scenes.jsx  → psd/<scene>.psd layered (copy of scripts/build_psd_scenes.jsx)
   <NAME>_premiere.xml             FCP7 XML
   <NAME>_captions.srt
   reel-data.json
   graphics/*.png  sfx/*.wav  fonts/*.ttf
   footage/  (raw footage goes here — big files are not zipped)
-  renders/  (AE GRAPHICS alpha render goes here for Premiere V2)
+  renders/  (fallback only: AE GRAPHICS alpha render; default is Dynamic Link of the .aep)
 ```
 
 ## Build steps
@@ -35,13 +37,14 @@ If computer use is available on his Mac/PC, you can open the apps and run these 
    npm i --no-save acorn
    node -e "require('acorn').parse(require('fs').readFileSync('<jsx>','utf8'),{ecmaVersion:3,allowReserved:true});console.log('ES3 OK')"
    node scripts/mock_ae.js <kit>/after-effects/build_<name>.jsx
+   node scripts/mock_ps.js <kit>/photoshop/build_psd_scenes.jsx <kit>   # Photoshop script + scene-spec + graphics
    ```
    The mock AE host runs the script end-to-end and catches reference/data errors (it can't catch wrong AE parameter indices — those are wrapped in try/catch and reported in the final alert).
 4. **Premiere XML + SRT:**
    ```bash
    python3 scripts/export_premiere.py --kit <kit> --raw-name "<raw file name>" --raw-duration <sec> --face 495,520 --name <NAME>
    ```
-   V1 = speaker cuts split at half/zoom boundaries with static Basic Motion (half: +840px down; zoom: 118% around the face) · V2 = `renders/<NAME>_GRAPHICS.mov` · A1 voice · A2 whooshes · A3 textures · A4 risers · A5 hits · scene markers. Paths are relative → he does **Link Media** once.
+   V1 = speaker cuts split at half/zoom boundaries with static Basic Motion (half: +840px down; zoom: 118% around the face) · V2 = `renders/<NAME>_GRAPHICS.mov` placeholder (README: replace it with the Dynamic-Linked `GRAPHICS` comp from the `.aep` so it stays editable) · A1 voice · A2 whooshes · A3 textures · A4 risers · A5 hits · scene markers. Paths are relative → he does **Link Media** once.
 5. Copy graphics/sfx/fonts, write the README, zip (without footage) and send. Keep it under 30 MB.
 
 ## ExtendScript rules that matter

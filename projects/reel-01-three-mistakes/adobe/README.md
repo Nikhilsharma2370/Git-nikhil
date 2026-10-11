@@ -4,12 +4,16 @@ Ye kit wahi "3 mistakes" reel **After Effects aur Premiere Pro me** banane ke li
 
 > **Zaroori:** ye files Linux cloud machine par bani hain, jahan Adobe apps nahi chalte. AE script ES3 syntax check aur ek mock-AE dry run (7418 calls, bina error) pass kar chuki hai. Premiere XML ka structure bhi validate ho chuka hai. **Asli AE / Premiere me pehli baar chala rahe ho**, isliye koi error ya warning aaye to uska screenshot bhej dena, main theek kar dunga.
 
+> **Sab kuch editable hai:** text = live text layers, graphics = alag layers / Smart Objects, shadow / glow = Layer Style ya Effect, animation = AE keyframes, cuts = raw footage ke clips, SFX = alag clips alag tracks par. Kuch bhi pehle se render (baked) nahi hai.
+
 ## Kit me kya hai
 
 | Path | Kya hai |
 |------|---------|
 | `after-effects/build_reel_01.jsx` | **Main script.** AE me poori reel asli layers se banati hai |
 | `after-effects/reel-data.jsxinc` | Timings (cuts, words, captions, scenes, SFX). Script khud padhti hai |
+| `photoshop/build_psd_scenes.jsx` | Photoshop script: 6 scenes ke **layered PSD** banata hai (`psd/` folder me) |
+| `scene-spec.json` | Har scene ka layout (positions, text, fonts). Script yahi padhti hai |
 | `REEL_01_premiere.xml` | Premiere sequence: cuts + motion + SFX tracks + markers |
 | `REEL_01_captions.srt` | Captions (Premiere caption track ke liye) |
 | `graphics/*.png` | 13 Gemini cutouts (app icon, arrow, star, eye, lamp, sparkle, perfume, camcorder, brush, 3 paint tubes) |
@@ -22,6 +26,15 @@ Ye kit wahi "3 mistakes" reel **After Effects aur Premiere Pro me** banane ke li
 1. **Fonts install karo:** `fonts/` ki saari `.ttf` par double-click → Install. AE / Premiere band karke phir kholna.
 2. **Raw footage:** Joseph ke free Drive folder se `3 things from beginner to pro.mp4` download karo: <https://drive.google.com/drive/folders/1WJMeuTvYZJgufE9_Xpkp6xThzQWXhR-G>. Use **`footage/`** folder me rakho (naam same rehna chahiye).
    - Ye footage sirf practice ke liye hai. Apni footage use karni ho to mujhe bhejo, main timings dobara bana dunga.
+
+## Step 1.5: Photoshop (scene designs, layered PSD)
+
+1. Photoshop kholo → **File → Scripts → Browse…** → `photoshop/build_psd_scenes.jsx`.
+2. 6 documents khulenge aur `psd/` folder me save ho jaayenge: `SC_FULL1_video_centric`, `SC_HALF1_shrink`, `SC_HALF2_less_is_more`, `SC_FULL2_spotlight`, `SC_HALF3_harsh`, `SC_FULL3_high_end` (`.psd` + `.png` preview).
+3. Har PSD me groups hain: **BACKGROUND** (paper, grid, casted shadow, vignette, grain) → **DEPTH** → **SUPPORT** → **HERO** → **TEXT**. Graphics Smart Object hain (double-click karke andar edit), shadow Layer Style hai, text live type hai. Jo chahe badlo, phir Save.
+4. Kuch alag dikhe (font missing, warning) to alert ka screenshot bhejo.
+
+**PSD ko After Effects me animate karna:** File → Import → `psd/<scene>.psd` → Import As: **Composition – Retain Layer Sizes**, Layer Options: **Editable Layer Styles**. Text ke liye: layer select → Layer → Create → **Convert to Editable Text**. Ye comp `REEL_01` me us scene ke time par rakho (script wale `SC_…` comp ki jagah bhi rakh sakte ho).
 
 ## Step 2A: After Effects (recommended, sab kuch yahin)
 
@@ -50,20 +63,21 @@ Ye kit wahi "3 mistakes" reel **After Effects aur Premiere Pro me** banane ke li
 
 ## Step 2B: Premiere Pro (cut + sound + finishing)
 
-1. AE me `GRAPHICS` comp render karo: **QuickTime → Apple ProRes 4444, Channels: RGB + Alpha**. File ka naam `REEL_01_GRAPHICS.mov` rakho aur kit me `renders/` folder banake usme save karo.
-2. Premiere → **File → Import** → `REEL_01_premiere.xml`. Phir **File → Save As** → `REEL_01.prproj` (yahi aapki editable Premiere file hai).
-3. Media offline dikhe to: clip par right-click → **Link Media** → `footage/`, `sfx/` aur `renders/` folders dikha do. Ek baar link karte hi saare clips jud jaate hain.
+1. Premiere → **File → Import** → `REEL_01_premiere.xml`. Phir **File → Save As** → `REEL_01.prproj` (yahi aapki editable Premiere file hai).
+2. Media offline dikhe to: clip par right-click → **Link Media** → `footage/` aur `sfx/` folders dikha do. Ek baar link karte hi saare clips jud jaate hain.
+3. **Graphics editable (Dynamic Link):** **File → Import** → `REEL_01.aep` → `GRAPHICS` comp chuno. Use **V2** par 00:00 par rakho (wahan ka offline `REEL_01_GRAPHICS.mov` placeholder delete kar do). Ab AE me kuch bhi badlo, Premiere me apne aap update hoga.
+   - Playback slow ho to: Sequence → Render In to Out. Fallback: AE me `GRAPHICS` ko QuickTime ProRes 4444 + Alpha me `renders/REEL_01_GRAPHICS.mov` naam se render karke Link Media karo.
 4. Captions: **File → Import** → `REEL_01_captions.srt` → timeline par caption track me daalo (optional; animated captions GRAPHICS me already hain).
 
 **Sequence me kya hai:**
 - **V1:** 21 speaker clips (13 cuts). Half-screen aur zoom wale hisson me clip split hai aur static Basic Motion laga hai (half: neeche 840 px; zoom: 118%, face center par).
-- **V2:** `REEL_01_GRAPHICS.mov` (AE ka alpha render).
+- **V2:** AE ka `GRAPHICS` comp (Dynamic Link, step 3). XML me iski jagah `REEL_01_GRAPHICS.mov` placeholder hai.
 - **A1:** voice. **A2:** whooshes (−12/−10 dB). **A3:** textures (−6 to −9 dB). **A4:** risers (−5 dB). **A5:** hits.
 - **Markers:** har scene ka naam.
 
 > Premiere me half-screen wale clips me speaker **neeche** khiskna chahiye. Agar upar ja raha ho, to Effect Controls → Position ka Y value ulta kar do (1 min ka kaam). Ye XML center-coordinate ka known farq hai jo kuch Premiere versions me aata hai.
 >
-> UI ke peeche wala blur Premiere me nahi hai (sirf AE me hai). Chahiye to V1 ke upar Adjustment Layer + Gaussian Blur + mask lagao. Ya seedha AE wala `REEL_01` render use karo.
+> UI ke peeche wala blur Premiere me nahi hai (sirf AE me hai). Chahiye to V1 ke upar Adjustment Layer + Gaussian Blur + mask lagao. Ya seedha AE wala `REEL_01` comp Dynamic Link karo.
 
 ## Graphics (Gemini → cutout)
 

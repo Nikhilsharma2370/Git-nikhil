@@ -12,5 +12,5 @@ Ye repo Nikhil ka learning log hai. Rule simple hai: **jo jo Nikhil seekhta hai,
    - `learnings/README.md` ke index me nayi entry jodo.
    - Commit karke push karo.
 3. Jab Nikhil koi design, video ya edit ka kaam bole, pehle check karo ki koi purani learning lagu hoti hai ya nahi, aur use apply karo.
-4. **Remotion / short-form video editing ka koi bhi kaam ho** (captions, hook, animation, UI overlay, full edit), to pehle `.claude/skills/viral-reel-editor/SKILL.md` follow karo. Wo Nikhil ka poora editing pipeline hai (brief + scripts + Remotion template + Adobe kit), aur saare lessons se juda hua hai.
+4. **Remotion / short-form video editing ka koi bhi kaam ho** (captions, hook, animation, UI overlay, full edit), to pehle `.claude/skills/viral-reel-editor/SKILL.md` follow karo. Wo Nikhil ka poora editing pipeline hai (brief + scripts + Remotion template + Adobe kit), aur saare lessons se juda hua hai. **Default: ADOBE MODE**, yaani Nikhil khud Photoshop + After Effects + Premiere me edit karta hai, to use **full editable** kit do (layered PSD, native AE layers + keyframes, Premiere XML + Dynamic Link, alag SFX tracks). Kuch bhi baked nahi. Remotion sirf preview ke liye.
 5. Notes Hinglish me likho, Nikhil ki tarah. Technical terms (blur, opacity, drop shadow) English me hi rehne do.

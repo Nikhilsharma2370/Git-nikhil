@@ -1,0 +1,535 @@
+{
+ "_note": "Reel 01 ke 6 scenes. Full = 1080x1920, Half = 1080x960 (upar wala panel, speaker neeche). x/y = center (image/card/rect) ya text anchor. Photoshop: File > Scripts > Browse > photoshop/build_psd_scenes.jsx",
+ "scenes": [
+  {
+   "name": "SC_FULL1_video_centric",
+   "width": 1080,
+   "height": 1920,
+   "accent": "5B95FF",
+   "layers": [
+    {
+     "group": "DEPTH",
+     "type": "image",
+     "file": "camcorder.png",
+     "x": 985,
+     "y": 110,
+     "w": 300,
+     "rot": 8,
+     "blur": 1.5
+    },
+    {
+     "group": "DEPTH",
+     "type": "image",
+     "file": "brush_stroke.png",
+     "x": 180,
+     "y": 1760,
+     "w": 520,
+     "rot": -8,
+     "shadow": false
+    },
+    {
+     "group": "HERO",
+     "type": "card",
+     "name": "VIDEO CARD (yahan footage clip rakho)",
+     "x": 540,
+     "y": 980,
+     "w": 760,
+     "h": 1010,
+     "rot": -6,
+     "opacity": 100
+    },
+    {
+     "group": "SUPPORT",
+     "type": "image",
+     "file": "arrow_huge.png",
+     "x": 260,
+     "y": 400,
+     "w": 330,
+     "rot": -12
+    },
+    {
+     "group": "SUPPORT",
+     "type": "image",
+     "file": "star_huge.png",
+     "x": 820,
+     "y": 1450,
+     "w": 300
+    },
+    {
+     "group": "TEXT",
+     "type": "text",
+     "text": "screams",
+     "font": "Inter-Regular",
+     "size": 52,
+     "color": "2E2C2A",
+     "x": 540,
+     "y": 1640
+    },
+    {
+     "group": "TEXT",
+     "type": "text",
+     "text": "beginner.",
+     "font": "EBGaramond-BoldItalic",
+     "size": 112,
+     "color": "5B95FF",
+     "x": 540,
+     "y": 1760
+    }
+   ]
+  },
+  {
+   "name": "SC_HALF1_shrink",
+   "width": 1080,
+   "height": 960,
+   "accent": "5B95FF",
+   "layers": [
+    {
+     "group": "TEXT",
+     "type": "text",
+     "text": "ELEMENT SIZE",
+     "font": "Inter-Medium",
+     "size": 22,
+     "tracking": 200,
+     "color": "8A847C",
+     "x": 70,
+     "y": 92,
+     "justify": "left"
+    },
+    {
+     "group": "DEPTH",
+     "type": "card",
+     "name": "ghost: BEFORE size (100%)",
+     "x": 540,
+     "y": 500,
+     "w": 420,
+     "h": 420,
+     "opacity": 35,
+     "blur": 2
+    },
+    {
+     "group": "HERO",
+     "type": "image",
+     "file": "app_icon.png",
+     "name": "HERO app icon (75%)",
+     "x": 540,
+     "y": 500,
+     "w": 315
+    },
+    {
+     "group": "SUPPORT",
+     "type": "rect",
+     "name": "badge",
+     "x": 820,
+     "y": 288,
+     "w": 130,
+     "h": 56
+    },
+    {
+     "group": "SUPPORT",
+     "type": "text",
+     "text": "-25%",
+     "font": "Inter-SemiBold",
+     "size": 34,
+     "color": "FFFFFF",
+     "x": 820,
+     "y": 300
+    },
+    {
+     "group": "SUPPORT",
+     "type": "image",
+     "file": "sparkle.png",
+     "x": 705,
+     "y": 350,
+     "w": 70,
+     "shadow": false
+    },
+    {
+     "group": "SUPPORT",
+     "type": "image",
+     "file": "sparkle.png",
+     "x": 370,
+     "y": 620,
+     "w": 46,
+     "shadow": false
+    }
+   ]
+  },
+  {
+   "name": "SC_HALF2_less_is_more",
+   "width": 1080,
+   "height": 960,
+   "accent": "5B95FF",
+   "layers": [
+    {
+     "group": "HERO",
+     "type": "rect",
+     "name": "Glow toggle (ON)",
+     "x": 540,
+     "y": 470,
+     "w": 300,
+     "h": 90
+    },
+    {
+     "group": "TEXT",
+     "type": "text",
+     "text": "EFFECTS",
+     "font": "Inter-Medium",
+     "size": 22,
+     "tracking": 200,
+     "color": "8A847C",
+     "x": 90,
+     "y": 102,
+     "justify": "left"
+    },
+    {
+     "group": "HERO",
+     "type": "text",
+     "text": "Glow",
+     "font": "Inter-Medium",
+     "size": 32,
+     "color": "FFFFFF",
+     "x": 540,
+     "y": 482
+    },
+    {
+     "group": "DEPTH",
+     "type": "card",
+     "name": "other effects (OFF)",
+     "x": 540,
+     "y": 650,
+     "w": 820,
+     "h": 220,
+     "opacity": 55,
+     "blur": 2
+    },
+    {
+     "group": "SUPPORT",
+     "type": "image",
+     "file": "sparkle.png",
+     "x": 690,
+     "y": 420,
+     "w": 84,
+     "shadow": false
+    },
+    {
+     "group": "SUPPORT",
+     "type": "image",
+     "file": "sparkle.png",
+     "x": 395,
+     "y": 600,
+     "w": 54,
+     "shadow": false
+    }
+   ]
+  },
+  {
+   "name": "SC_FULL2_spotlight",
+   "width": 1080,
+   "height": 1920,
+   "accent": "5B95FF",
+   "layers": [
+    {
+     "group": "DEPTH",
+     "type": "card",
+     "name": "ghost card 1",
+     "x": 220,
+     "y": 420,
+     "w": 300,
+     "h": 200,
+     "rot": -5,
+     "blur": 3,
+     "opacity": 60
+    },
+    {
+     "group": "DEPTH",
+     "type": "card",
+     "name": "ghost card 2",
+     "x": 880,
+     "y": 1250,
+     "w": 300,
+     "h": 200,
+     "rot": 6,
+     "blur": 3,
+     "opacity": 60
+    },
+    {
+     "group": "SUPPORT",
+     "type": "image",
+     "file": "spotlight_lamp.png",
+     "x": 150,
+     "y": 720,
+     "w": 230,
+     "rot": 25
+    },
+    {
+     "group": "HERO",
+     "type": "image",
+     "file": "eye.png",
+     "x": 540,
+     "y": 980,
+     "w": 360
+    },
+    {
+     "group": "TEXT",
+     "type": "text",
+     "text": "Reserve your",
+     "font": "Inter-Regular",
+     "size": 52,
+     "color": "2E2C2A",
+     "x": 540,
+     "y": 230
+    },
+    {
+     "group": "TEXT",
+     "type": "text",
+     "text": "visual effects",
+     "font": "EBGaramond-BoldItalic",
+     "size": 104,
+     "color": "5B95FF",
+     "x": 540,
+     "y": 330
+    },
+    {
+     "group": "TEXT",
+     "type": "text",
+     "text": "for elements that you really need to",
+     "font": "Inter-Regular",
+     "size": 44,
+     "color": "2E2C2A",
+     "x": 540,
+     "y": 1550
+    },
+    {
+     "group": "TEXT",
+     "type": "text",
+     "text": "grab attention.",
+     "font": "EBGaramond-BoldItalic",
+     "size": 112,
+     "color": "5B95FF",
+     "x": 540,
+     "y": 1670
+    }
+   ]
+  },
+  {
+   "name": "SC_HALF3_harsh",
+   "width": 1080,
+   "height": 960,
+   "accent": "E02424",
+   "layers": [
+    {
+     "group": "TEXT",
+     "type": "text",
+     "text": "THE BEGINNER PALETTE",
+     "font": "Inter-Medium",
+     "size": 22,
+     "tracking": 250,
+     "color": "8A847C",
+     "x": 540,
+     "y": 122
+    },
+    {
+     "group": "HERO",
+     "type": "image",
+     "file": "tube_black.png",
+     "x": 290,
+     "y": 450,
+     "w": 190,
+     "rot": -6
+    },
+    {
+     "group": "HERO",
+     "type": "image",
+     "file": "tube_white.png",
+     "x": 540,
+     "y": 450,
+     "w": 190
+    },
+    {
+     "group": "HERO",
+     "type": "image",
+     "file": "tube_red.png",
+     "x": 790,
+     "y": 450,
+     "w": 190,
+     "rot": 6
+    },
+    {
+     "group": "TEXT",
+     "type": "text",
+     "text": "HARSH BLACK",
+     "font": "Inter-SemiBold",
+     "size": 24,
+     "tracking": 120,
+     "color": "2E2C2A",
+     "x": 290,
+     "y": 795
+    },
+    {
+     "group": "TEXT",
+     "type": "text",
+     "text": "HARSH WHITE",
+     "font": "Inter-SemiBold",
+     "size": 24,
+     "tracking": 120,
+     "color": "2E2C2A",
+     "x": 540,
+     "y": 795
+    },
+    {
+     "group": "TEXT",
+     "type": "text",
+     "text": "BRIGHT RED",
+     "font": "Inter-SemiBold",
+     "size": 24,
+     "tracking": 120,
+     "color": "2E2C2A",
+     "x": 790,
+     "y": 795
+    },
+    {
+     "group": "SUPPORT",
+     "type": "text",
+     "text": "TOO HARSH",
+     "font": "Inter-SemiBold",
+     "size": 30,
+     "tracking": 150,
+     "color": "E02424",
+     "x": 540,
+     "y": 885
+    }
+   ]
+  },
+  {
+   "name": "SC_FULL3_high_end",
+   "width": 1080,
+   "height": 1920,
+   "accent": "5B95FF",
+   "layers": [
+    {
+     "group": "DEPTH",
+     "type": "text",
+     "text": "HERMÈS",
+     "font": "EBGaramond-Regular",
+     "size": 32,
+     "tracking": 200,
+     "color": "7A5B3E",
+     "x": 200,
+     "y": 380
+    },
+    {
+     "group": "DEPTH",
+     "type": "text",
+     "text": "TIFFANY & CO.",
+     "font": "EBGaramond-Regular",
+     "size": 30,
+     "tracking": 100,
+     "color": "2E2C2A",
+     "x": 760,
+     "y": 360
+    },
+    {
+     "group": "DEPTH",
+     "type": "text",
+     "text": "ROLEX",
+     "font": "EBGaramond-Regular",
+     "size": 40,
+     "tracking": 200,
+     "color": "2F5A43",
+     "x": 780,
+     "y": 560
+    },
+    {
+     "group": "DEPTH",
+     "type": "text",
+     "text": "Cartier",
+     "font": "EBGaramond-BoldItalic",
+     "size": 50,
+     "color": "2E2C2A",
+     "x": 200,
+     "y": 600
+    },
+    {
+     "group": "DEPTH",
+     "type": "text",
+     "text": "CHANEL",
+     "font": "Inter-SemiBold",
+     "size": 36,
+     "tracking": 230,
+     "color": "2E2C2A",
+     "x": 800,
+     "y": 1225
+    },
+    {
+     "group": "DEPTH",
+     "type": "text",
+     "text": "Dior",
+     "font": "EBGaramond-Regular",
+     "size": 58,
+     "color": "2E2C2A",
+     "x": 230,
+     "y": 1290
+    },
+    {
+     "group": "DEPTH",
+     "type": "text",
+     "text": "LOUIS VUITTON",
+     "font": "Inter-Medium",
+     "size": 24,
+     "tracking": 130,
+     "color": "2E2C2A",
+     "x": 820,
+     "y": 1425
+    },
+    {
+     "group": "SUPPORT",
+     "type": "rect",
+     "name": "dull blue",
+     "x": 380,
+     "y": 960,
+     "w": 150,
+     "h": 150,
+     "color": "5B6F86"
+    },
+    {
+     "group": "SUPPORT",
+     "type": "rect",
+     "name": "dull green",
+     "x": 700,
+     "y": 960,
+     "w": 150,
+     "h": 150,
+     "color": "5E7461"
+    },
+    {
+     "group": "HERO",
+     "type": "image",
+     "file": "perfume.png",
+     "x": 540,
+     "y": 1290,
+     "w": 210
+    },
+    {
+     "group": "TEXT",
+     "type": "text",
+     "text": "Duller colors always look",
+     "font": "Inter-Regular",
+     "size": 52,
+     "color": "2E2C2A",
+     "x": 540,
+     "y": 1640
+    },
+    {
+     "group": "TEXT",
+     "type": "text",
+     "text": "more high-end.",
+     "font": "EBGaramond-BoldItalic",
+     "size": 112,
+     "color": "5B95FF",
+     "x": 540,
+     "y": 1770
+    }
+   ]
+  }
+ ]
+}
