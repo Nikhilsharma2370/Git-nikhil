@@ -27,7 +27,7 @@ Ye kit wahi "3 mistakes" reel **After Effects aur Premiere Pro me** banane ke li
 
 1. After Effects kholo → naya project.
 2. **File → Scripts → Run Script File…** → `after-effects/build_reel_01.jsx`.
-3. 1–2 minute me Project panel me **`REEL_01`** folder ban jaayega, aur `REEL_01` comp khul jaayegi. End me ek alert aayega. Usme warnings hon to unka screenshot bhejo.
+3. 1–2 minute me Project panel me **`REEL_01`** folder ban jaayega, aur `REEL_01` comp khul jaayegi. Script project ko khud kit folder me **`REEL_01.aep`** naam se save kar deti hai. Agli baar seedha ye `.aep` file kholo. End me ek alert aayega; usme warnings hon to unka screenshot bhejo.
 
 **Comps:**
 
@@ -51,7 +51,7 @@ Ye kit wahi "3 mistakes" reel **After Effects aur Premiere Pro me** banane ke li
 ## Step 2B: Premiere Pro (cut + sound + finishing)
 
 1. AE me `GRAPHICS` comp render karo: **QuickTime → Apple ProRes 4444, Channels: RGB + Alpha**. File ka naam `REEL_01_GRAPHICS.mov` rakho aur kit me `renders/` folder banake usme save karo.
-2. Premiere → **File → Import** → `REEL_01_premiere.xml`.
+2. Premiere → **File → Import** → `REEL_01_premiere.xml`. Phir **File → Save As** → `REEL_01.prproj` (yahi aapki editable Premiere file hai).
 3. Media offline dikhe to: clip par right-click → **Link Media** → `footage/`, `sfx/` aur `renders/` folders dikha do. Ek baar link karte hi saare clips jud jaate hain.
 4. Captions: **File → Import** → `REEL_01_captions.srt` → timeline par caption track me daalo (optional; animated captions GRAPHICS me already hain).
 

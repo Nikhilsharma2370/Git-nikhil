@@ -960,7 +960,11 @@
   app.endUndoGroup();
   reel.openInViewer();
 
-  var msg = "REEL_01 ban gaya!\n\nProject panel → REEL_01 folder.\nRender: Composition → Add to Render Queue (H.264 / ProRes).\nPremiere ke liye: GRAPHICS comp ko 'ProRes 4444 + Alpha' me render karo.";
+  // Native editable project file: kit folder me REEL_01.aep
+  var aepPath = KIT.fsName + "/REEL_01.aep";
+  tryDo("save .aep", function () { app.project.save(new File(aepPath)); });
+
+  var msg = "REEL_01 ban gaya!\n\nEditable project save ho gaya: " + aepPath + "\nProject panel → REEL_01 folder.\nRender: Composition → Add to Render Queue (H.264 / ProRes).\nPremiere ke liye: GRAPHICS comp ko 'ProRes 4444 + Alpha' me render karo.";
   if (warnings.length) msg += "\n\nKuch warnings (" + warnings.length + "):\n" + warnings.slice(0, 12).join("\n");
   alert(msg);
 })();
