@@ -7,3 +7,4 @@
 | 03 | Video Editing | [Caption layout inspiration: 9 frames, 7 layout templates, name tags, accent color rules](video-editing/03-caption-layout-inspiration.md) | 2026-10-11 |
 | 04 | Video Editing | [Hook editing: speaker dikhao, ek payoff word chuno (5 triggers)](video-editing/04-hook-editing.md) | 2026-10-11 |
 | 05 | Video Editing | [Animated scene types: text, person, object, graphic centric (8 types) + visual DNA](video-editing/05-animated-scene-types.md) | 2026-10-11 |
+| 06 | Video Editing | [Minimal animation style: 4 build steps (BG, focal, support, depth) + 5 design principles](video-editing/06-minimal-animation-principles.md) | 2026-10-11 |
