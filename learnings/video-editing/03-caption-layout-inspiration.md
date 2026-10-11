@@ -9,7 +9,12 @@ Lesson 02 ke rules (sans + script, glow, lower third) in sab frames me dikh rahe
 
 > Frames chhote (~150px) the. Colors aur fonts andaze se likhe hain, exact nahi.
 >
-> Frames 6–9 (Maria Wendt, Grace, Shelby Sapp, Codie Sanchez) ki images save nahi ho paayi, sirf unke observations neeche "Part 2" me likhe hain.
+> Frames 6–9 Lesson 04 ke hook overview slide se crop kiye gaye hain, isliye unpar halftone dots dikhte hain.
+
+| | | | |
+|---|---|---|---|
+| ![](assets/03-text-inspo-6.png) | ![](assets/03-text-inspo-7.png) | ![](assets/03-text-inspo-8.png) | ![](assets/03-text-inspo-9.png) |
+| 6. Social media | 7. GROWTH | 8. $100,000 | 9. steal |
 
 ## Core formula: Setup → Payoff → Tail
 
@@ -102,7 +107,7 @@ Entrepreneur                  ← tiny sans
 
 | # | Text | Kya naya hai |
 |---|------|--------------|
-| 6 | **Social media** / *is very different now* + name tag "Maria Wendt" | Payoff **bold sans** hai, aur tail **patla italic serif**. Lesson 02 ka "opposite weight" rule ulta bhi chalta hai |
+| 6 | **Social media** / *is very different now* + name tag "Maria Wendt" | Payoff **bold sans** hai (gold/yellow accent me), aur tail **patla italic serif**. Lesson 02 ka "opposite weight" rule ulta bhi chalta hai |
 | 7 | *The actual formula for* / **GROWTH** + "GRACE ANN…" | **Monochrome**: koi accent color nahi. Payoff sirf ALL CAPS aur bade size se alag dikhta hai. Cool/blue video me white hi best laga |
 | 8 | WHICH / **$100,000** / A… + "Shelby Sapp" | **Money number** hero hai, white/cream serif me glow ke saath. Setup aur tail tiny UPPERCASE |
 | 9 | I WANT YOU TO / ***steal*** / TODAY + "Codie Sanchez" | Ek hi **power verb** script me, accent color me. Name tag **head ke paas side me**, lower-left me nahi |
@@ -124,6 +129,7 @@ Entrepreneur                  ← tiny sans
 
 ### Name tags: total 4 jagah dikhe
 - **Lower-left** (Maria, Grace, Shelby, Bryan). Sabse common, safe default.
+  - Shelby wale tag me naam ek **white box/label** ke andar hai (dark text). Ye ek aur variation hai.
 - **Head ke bagal me** (Codie). Zyada personal feel.
 - **Top me bada, subject ke peeche** (Marina). Sabse premium.
 - Format hamesha same: **Naam** (medium/bold, ya CAPS) + neeche **tiny role line** (thin).
