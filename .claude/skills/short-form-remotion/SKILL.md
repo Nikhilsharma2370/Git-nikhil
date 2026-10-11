@@ -1,15 +1,15 @@
 ---
 name: short-form-remotion
-description: Nikhil's full brief for editing short-form talking-head videos (Reels / Shorts / TikTok, 9:16) with Remotion — captions (sans + script), hooks, full-screen animated scenes (text / object / character / video centric), the 4-step scene build, design principles, graphs, and on-screen UI overlays with darkened + blurred background. Use this every time you create captions, a hook, an animation, a scene, a UI overlay, or a full edit with Remotion (or any code-based video) for Nikhil, even if he only says "reel banao", "caption lagao", "animation banao", "Remotion me edit karo".
+description: Nikhil's full brief for editing short-form talking-head videos (Reels / Shorts / TikTok, 9:16) with Remotion — captions (sans + script), hooks, the 3 animation kinds (on-screen UI, half-screen, full-screen), scene categories (text / object / character / video centric), the 4-step scene build, design principles, graphs, on-screen UI overlays with darkened + blurred background, and sound design (whooshes / textures / risers). Use this every time you create captions, a hook, an animation, a scene, a UI overlay, or a full edit with Remotion (or any code-based video) for Nikhil, even if he only says "reel banao", "caption lagao", "animation banao", "Remotion me edit karo".
 ---
 
 # Short-Form Talking-Head Editing with Remotion
 
-This is the house style. Every rule below comes from Nikhil's brief and the lessons in `learnings/`. Before building, **open the referenced lesson files and look at their reference images** — they are the visual target, not optional extras. Also load the `remotion-best-practices` skill for Remotion API details if it is available.
+This is the house style. Every rule below comes from Nikhil's brief and the lessons in `learnings/`. The brief is modeled on Joseph Eid's (Ultimate Editors) "viral talking head" style; his finished example edit is analyzed in `learnings/video-editing/08-three-animation-kinds-and-video-centric.md` — use its timeline as the reference for pacing. Before building, **open the referenced lesson files and look at their reference images** — they are the visual target, not optional extras. Also load the `remotion-best-practices` skill for Remotion API details if it is available.
 
 Canvas: **1080×1920, 30fps**. Speaker footage via `<OffthreadVideo>`; assets via `staticFile()`; all motion from `useCurrentFrame()` + `interpolate()` / `spring()` (never CSS transitions).
 
-The brief has 8 parts. Work through them in this order.
+The brief has 9 parts. Work through them in this order.
 
 ---
 
@@ -47,16 +47,25 @@ Payoff words: numbers, money, power verbs, the core concept.
 - Keep viewers hooked through the video: a new visual beat (caption payoff, scene, or UI card) every few seconds; never the same scene type twice in a row.
 
 ## 4. Full-screen animations guide
-**Read:** `learnings/video-editing/05-animated-scene-types.md` (+ its 4 slide images)
+**Read:** `learnings/video-editing/05-animated-scene-types.md` (+ its 4 slide images) and `08-three-animation-kinds-and-video-centric.md` (+ key frames)
 
-Full-screen scenes replace the speaker for 1.5–3s. Categories:
+### The three kinds of animations
+| Kind | Frame | Use when |
+|---|---|---|
+| **On-screen (UI)** | Speaker fills the frame; lower part darkened + blurred; caption, then a small dark-glass UI below it (see §7) | Structure and small facts: steppers ①②③, sliders, counters, lists |
+| **Half-screen** | Hard split: top ~50% = off-white paper + grid scene with one big object/UI; bottom ~50% = speaker crop (face centered), caption over the speaker half | The point needs a visual **and** the speaker's expression |
+| **Full-screen** | Speaker gone; the whole frame is the paper + grid scene (§5) | Big visual proof, reveals, lists of examples |
+
+Plus **zooms / camera moves** on the speaker between scenes. Rotate the kinds — never the same kind twice in a row; a new visual every 3–5s. Per point: on-screen (number/title) → half or full (visual proof) → back to speaker.
+
+### Scene categories (inside half- and full-screen)
 
 | Category | Types |
 |---|---|
 | **Text-centric** | Text only · Text + Object (object secondary, for depth) · Text + Graphic shapes |
 | **Object-centric** | Object in middle + text above/below · Object + graphics behind/around |
 | **Character-centric** | Person in center with a graphic behind (color block, circle, polaroid frame) · Person on the side + text and who they are |
-| **Video-centric** | *Not yet documented in `learnings/` — ask Nikhil for the slide before inventing rules.* |
+| **Video-centric** | A video clip (B-roll, old reel, screen recording) is the hero, inside a rounded card or phone frame (radius ~16px, thin white border, soft drop shadow), tilted 2–5°, sliding/panning slowly through the frame while sans + script text changes beside it; clip audio muted |
 
 The object = the literal visual of the spoken word ("Binge Watch" → popcorn, "Formula" → flask). Cutouts are B&W/desaturated, background removed, with casted shadow. One accent color per scene. Brush strokes, arrows, sparkle stars, Figma-style selection boxes, label bars.
 
@@ -96,6 +105,16 @@ Graphs: dark background, near-invisible grid, one smooth line + fading gradient 
 - [ ] Full-screen scenes: BG → hero → support → depth; 3-tone palette; no type repeated back-to-back
 - [ ] On-screen UI: under caption, face clear, background darkened + blurred behind it
 - [ ] Every visual synced to the spoken word (use word-level timestamps)
+- [ ] Animation kinds rotate (on-screen / half / full), new visual every 3–5s
+- [ ] Sound: whooshes on moves, textures on events, risers into segments, no music under animations
 - [ ] Rendered a few stills and checked them against the reference images before the full render
 
-If a part of the brief is missing from `learnings/` (e.g. video-centric scenes, the "three kinds of animations"), say so and ask for the slide rather than guessing.
+## 9. Sound design
+**Read:** `learnings/video-editing/09-sound-design.md`
+
+- Sound only emphasizes visible motion. Three families: **whooshes** (movement, peak on the fastest frame, −12 dB, max −10) · **textures** (pops, clicks, reveals, UI changes, on the event frame, −6 to −7 dB) · **risers + hits** (anticipation, riser ends on the transition frame with a hit under it, −5 dB; first one ~5s after the hook; ≥2 sharp bass + ≥2 metallic per video).
+- Music only under the talking head (−19 dB), never under animations. Voice is never covered.
+- Order: analyze frame by frame and report a cue sheet → whooshes pass → textures pass → risers/hits pass → mix check → music after approval.
+- Remotion: one `<Sequence>` track per family, `<Audio volume={10 ** (db / 20)}>`, original audio muted not deleted.
+
+If a part of the brief is still missing from `learnings/`, say so and ask rather than guessing.

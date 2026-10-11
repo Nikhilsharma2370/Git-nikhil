@@ -11,3 +11,5 @@
 | 07 | Design Inspiration | [UI inspiration board: 175 references, 4 styles (white minimal, brand posters, dark glow UI, abstract BG)](design-inspiration/01-ui-inspiration-board.md) | 2026-10-11 |
 | 08 | Design Inspiration | [Full graph inspiration: 11 animated chart styles, design rules, kab kaunsa, animation steps](design-inspiration/02-graph-inspiration.md) | 2026-10-11 |
 | 09 | Video Editing | [On-screen UI animation: speaker ke upar UI cards, 5 examples + 29 UI kit references](video-editing/07-on-screen-ui-animation.md) | 2026-10-11 |
+| 10 | Video Editing | [3 kinds of animations (on-screen, half, full) + video-centric scenes, Joseph ke final edit se](video-editing/08-three-animation-kinds-and-video-centric.md) | 2026-10-11 |
+| 11 | Video Editing | [Sound design: whooshes, textures, risers, levels, 3-pass workflow](video-editing/09-sound-design.md) | 2026-10-11 |
